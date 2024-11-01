@@ -148,6 +148,12 @@ namespace Server
 
                             Game.rooms[roomID].ChangePlayerTurn(attacker, shipLength);
                             sendToRoom(2, roomID, Game.rooms[roomID].CurrentTurn);
+
+                            /*// one of the two players won 
+                            if (Game.IsEndGame(roomID, attacker))
+                            {
+                                sendToRoom(4, roomID, attacker);
+                            }*/
                         }
                         // Trạng thái người chơi trong phòng chờ
                         else if (code == 4)
@@ -195,6 +201,21 @@ namespace Server
                             //{
                             //    sendToRoom(5, roomID, $"{Game.currentUsers[playerID].UserName} đã rời phòng.");
                             //}
+                        }
+                        else if (code == 6)
+                        {
+                            string roomID = msgPayload[1];
+                            string user = msgPayload[2];
+
+                            Room room = Game.rooms[roomID];
+                            int index = room.Players.Keys.ToList().IndexOf(user);
+                            room.isPlaying[index] = true;
+
+                            if (!room.isPlaying.Contains(false))
+                            {
+                                //
+                                sendToRoom(6, roomID);
+                            }
                         }
                     }
             }

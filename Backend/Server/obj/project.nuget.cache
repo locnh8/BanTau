@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kHDccKexkll2pYg++rWH7dOQsRPCbFcQfS7qOFXZK77KxKj5LvWWbunSRNGNNMN3T7bvfCYmPPqNFPXyJyiY6Q==",
+  "dgSpecHash": "zBXQAM7ltvPy9F2y3a8JF+1Ar4AU1vsIgxghdIhkqOLQp/sxzTJeZX2YeGQy2y+dNWaIqnSBxC7KEbg5J6zGrA==",
   "success": true,
-  "projectFilePath": "D:\\NT106-final\\Server_BattleShips\\Backend\\Server\\Server.csproj",
+  "projectFilePath": "D:\\NT106-final\\BanTau\\Backend\\Server\\Server.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

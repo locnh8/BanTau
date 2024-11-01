@@ -4,6 +4,8 @@ using System.IO;
 using System.Net;
 using System.Net.NetworkInformation;
 using System.Net.Sockets;
+using System.Text.Json;
+using System.Text;
 using System.Threading;
 using System.Windows.Forms;
 
@@ -173,8 +175,8 @@ namespace Battleships
                 // Code 2: Thông tin lượt chơi
                 else if (code == 2)
                 {
-                    string currentPlayerID = msgPayload[1];
-                    if (currentPlayerID == Game.me.cName)
+                    string currentTurn = msgPayload[2];
+                    if (currentTurn == Game.me.cName)
                     {
                         Game.me.isMyTurn = true;
                     }
@@ -227,6 +229,10 @@ namespace Battleships
                         Game.player = null;
                     }
                 }
+                else if (code == 6)
+                {
+                    DeployShip.startGame(DeployShip);
+                }
            }
             catch (Exception ex)
             {
@@ -245,13 +251,50 @@ namespace Battleships
         }
 
         // Gửi thông tin tấn công
-        public void SendMove(int code, string playerID, string roomID, int x, int y)
+        public void SendMove(int code, string roomID, string from, int x, int y)
         {
-            string formattedMsg = $"{code}|{playerID}|{roomID}|{x}:{y}";
+            string formattedMsg = $"{code}|{roomID}:{from}|{x}:{y}";
             if (sw != null)
             {
                 sw.WriteLine(formattedMsg);
             }
+        }
+
+        public void SendPlayerInfo(Player player, string roomID)
+        {
+            // Gửi thông điệp ban đầu
+            SendMsg(2, Game.me.cName, roomID);
+
+            // Chuyển đổi `player.ShipSet` sang chuỗi JSON
+            int[][] jaggedArray = ConvertToJaggedArray(player.ShipSet);
+            string jsonData = JsonSerializer.Serialize(jaggedArray);
+
+            // Chuyển chuỗi JSON thành mảng byte
+            byte[] jsonBytes = Encoding.UTF8.GetBytes(jsonData);
+
+            // Gửi kích thước của dữ liệu JSON trước
+            tcpClient.GetStream().Write(BitConverter.GetBytes(jsonBytes.Length), 0, sizeof(int));
+
+            // Gửi dữ liệu JSON qua stream
+            tcpClient.GetStream().Write(jsonBytes, 0, jsonBytes.Length);
+        }
+
+        // Phương thức chuyển đổi từ int[,] sang int[][]
+        public static int[][] ConvertToJaggedArray(int[,] array)
+        {
+            int rows = array.GetLength(0);
+            int cols = array.GetLength(1);
+            int[][] jaggedArray = new int[rows][];
+
+            for (int i = 0; i < rows; i++)
+            {
+                jaggedArray[i] = new int[cols];
+                for (int j = 0; j < cols; j++)
+                {
+                    jaggedArray[i][j] = array[i, j];
+                }
+            }
+            return jaggedArray;
         }
     }
 }

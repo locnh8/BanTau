@@ -31,9 +31,20 @@ namespace BattleShips
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            Private_Public formCreateRoom = new Private_Public();
-            formCreateRoom.Show();
-            this.Close();
+            if (MessageBox.Show("You will lose the game and return to the main menu. Are you sure?", "Surrender and Exit?", MessageBoxButtons.OK, MessageBoxIcon.Question) == DialogResult.OK)
+            {
+                if (!isEndGame)
+                {
+                    // send code 7
+                    Network.Instance.SendMsg(7, Game.me.roomID, Game.me.cName);
+                }
+
+                this.Hide();
+                this.Dispose();
+
+                Network.DeployShip.Dispose();
+                Network.create.Show();
+            }
         }
 
         private void pBoxDeskEnemy_MouseMove(object sender, MouseEventArgs e)
@@ -78,6 +89,7 @@ namespace BattleShips
             {
                 if (Game.CanAttackAt(mouseCellX, mouseCellY))
                 {
+                    Network.Instance.SendMove(3, Game.me.roomID, Game.me.cName, mouseCellX, mouseCellY);
                     Game.me.isMyTurn = false;
                 }
 
@@ -112,6 +124,8 @@ namespace BattleShips
             UpdateProgress(meProgress);
             UpdateProgress(enemyprogress);
         }
+
+        private delegate void SafeUpdateDesk(PictureBox picture);
         private void UpdateDesk(PictureBox picture)
         {
             if (picture.InvokeRequired)
@@ -124,7 +138,6 @@ namespace BattleShips
                 picture.Refresh();
             }
         }
-        private delegate void SafeUpdateDesk(PictureBox picture);
         private delegate void SafeUpdateProgress(ProgressBar pg);
         private void UpdateProgress(ProgressBar pg)
         {
@@ -184,7 +197,7 @@ namespace BattleShips
                         y = Game.RandomAttack();
                     }
 
-
+                    Network.Instance.SendMove(3, Game.me.roomID, Game.me.cName, x, y);
                     meProgress.Value = 0;
                 }
             }

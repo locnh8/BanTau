@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\NT106-final\\Server_BattleShips\\Backend\\Server\\Server.csproj": {}
+    "D:\\NT106-final\\BanTau\\Backend\\Server\\Server.csproj": {}
   },
   "projects": {
-    "D:\\NT106-final\\Server_BattleShips\\Backend\\Server\\Server.csproj": {
+    "D:\\NT106-final\\BanTau\\Backend\\Server\\Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\NT106-final\\Server_BattleShips\\Backend\\Server\\Server.csproj",
+        "projectUniqueName": "D:\\NT106-final\\BanTau\\Backend\\Server\\Server.csproj",
         "projectName": "Server",
-        "projectPath": "D:\\NT106-final\\Server_BattleShips\\Backend\\Server\\Server.csproj",
+        "projectPath": "D:\\NT106-final\\BanTau\\Backend\\Server\\Server.csproj",
         "packagesPath": "C:\\Users\\Hoang Loc\\.nuget\\packages\\",
-        "outputPath": "D:\\NT106-final\\Server_BattleShips\\Backend\\Server\\obj\\",
+        "outputPath": "D:\\NT106-final\\BanTau\\Backend\\Server\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Hoang Loc\\AppData\\Roaming\\NuGet\\NuGet.Config",

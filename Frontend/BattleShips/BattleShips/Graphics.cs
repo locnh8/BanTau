@@ -62,15 +62,13 @@ namespace BattleShips
             if (iCase == 0)
             {
                 coor = e.X;
-                return (coor < 3 || coor > 516) ? -1 : coor;
             }
             else
             {
                 coor = e.Y;
-                return (coor < 3 || coor > 434) ? -1 : coor;
             }
-
             return (coor < 34 || coor > 366) ? -1 : coor;
+
         }
 
         // return a index of current cell 

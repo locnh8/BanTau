@@ -1,29 +1,29 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\NT106-final\\Server_BattleShips\\Backend\\",
+  "WorkspaceRootPath": "D:\\NT106-final\\BanTau\\Backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0C3154F9-7766-494A-B621-D0D7FB7F0B6E}|Server\\Server.csproj|d:\\nt106-final\\server_battleships\\backend\\server\\network.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0C3154F9-7766-494A-B621-D0D7FB7F0B6E}|Server\\Server.csproj|d:\\nt106-final\\bantau\\backend\\server\\network.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0C3154F9-7766-494A-B621-D0D7FB7F0B6E}|Server\\Server.csproj|solutionrelative:server\\network.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0C3154F9-7766-494A-B621-D0D7FB7F0B6E}|Server\\Server.csproj|D:\\NT106-final\\Server_BattleShips\\Backend\\server\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0C3154F9-7766-494A-B621-D0D7FB7F0B6E}|Server\\Server.csproj|D:\\NT106-final\\BanTau\\Backend\\server\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0C3154F9-7766-494A-B621-D0D7FB7F0B6E}|Server\\Server.csproj|solutionrelative:server\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0C3154F9-7766-494A-B621-D0D7FB7F0B6E}|Server\\Server.csproj|D:\\NT106-final\\Server_BattleShips\\Backend\\server\\ship.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0C3154F9-7766-494A-B621-D0D7FB7F0B6E}|Server\\Server.csproj|solutionrelative:server\\ship.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0C3154F9-7766-494A-B621-D0D7FB7F0B6E}|Server\\Server.csproj|D:\\NT106-final\\Server_BattleShips\\Backend\\server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0C3154F9-7766-494A-B621-D0D7FB7F0B6E}|Server\\Server.csproj|solutionrelative:server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0C3154F9-7766-494A-B621-D0D7FB7F0B6E}|Server\\Server.csproj|D:\\NT106-final\\Server_BattleShips\\Backend\\server\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0C3154F9-7766-494A-B621-D0D7FB7F0B6E}|Server\\Server.csproj|D:\\NT106-final\\BanTau\\Backend\\server\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0C3154F9-7766-494A-B621-D0D7FB7F0B6E}|Server\\Server.csproj|solutionrelative:server\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0C3154F9-7766-494A-B621-D0D7FB7F0B6E}|Server\\Server.csproj|D:\\NT106-final\\Server_BattleShips\\Backend\\server\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0C3154F9-7766-494A-B621-D0D7FB7F0B6E}|Server\\Server.csproj|D:\\NT106-final\\BanTau\\Backend\\server\\ship.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C3154F9-7766-494A-B621-D0D7FB7F0B6E}|Server\\Server.csproj|solutionrelative:server\\ship.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C3154F9-7766-494A-B621-D0D7FB7F0B6E}|Server\\Server.csproj|D:\\NT106-final\\BanTau\\Backend\\server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C3154F9-7766-494A-B621-D0D7FB7F0B6E}|Server\\Server.csproj|solutionrelative:server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C3154F9-7766-494A-B621-D0D7FB7F0B6E}|Server\\Server.csproj|D:\\NT106-final\\BanTau\\Backend\\server\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0C3154F9-7766-494A-B621-D0D7FB7F0B6E}|Server\\Server.csproj|solutionrelative:server\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -40,11 +40,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Network.cs",
-              "DocumentMoniker": "D:\\NT106-final\\Server_BattleShips\\Backend\\Server\\Network.cs",
+              "DocumentMoniker": "D:\\NT106-final\\BanTau\\Backend\\Server\\Network.cs",
               "RelativeDocumentMoniker": "Server\\Network.cs",
-              "ToolTip": "D:\\NT106-final\\Server_BattleShips\\Backend\\Server\\Network.cs",
+              "ToolTip": "D:\\NT106-final\\BanTau\\Backend\\Server\\Network.cs",
               "RelativeToolTip": "Server\\Network.cs",
-              "ViewState": "AQIAAJMAAAAAAAAAAAAmwKkAAAAfAAAA",
+              "ViewState": "AQIAAI4AAAAAAAAAAAAkwJ4AAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-07T15:05:40.395Z",
               "IsPinned": true,
@@ -52,38 +52,36 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Ship.cs",
-              "DocumentMoniker": "D:\\NT106-final\\Server_BattleShips\\Backend\\Server\\Ship.cs",
+              "DocumentMoniker": "D:\\NT106-final\\BanTau\\Backend\\Server\\Ship.cs",
               "RelativeDocumentMoniker": "Server\\Ship.cs",
-              "ToolTip": "D:\\NT106-final\\Server_BattleShips\\Backend\\Server\\Ship.cs",
+              "ToolTip": "D:\\NT106-final\\BanTau\\Backend\\Server\\Ship.cs",
               "RelativeToolTip": "Server\\Ship.cs",
               "ViewState": "AQIAAAIAAAAAAAAAAADwvxAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-15T04:48:33.503Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\NT106-final\\Server_BattleShips\\Backend\\Server\\Program.cs",
+              "DocumentMoniker": "D:\\NT106-final\\BanTau\\Backend\\Server\\Program.cs",
               "RelativeDocumentMoniker": "Server\\Program.cs",
-              "ToolTip": "D:\\NT106-final\\Server_BattleShips\\Backend\\Server\\Program.cs",
+              "ToolTip": "D:\\NT106-final\\BanTau\\Backend\\Server\\Program.cs",
               "RelativeToolTip": "Server\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T04:52:34.013Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T04:52:34.013Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "Player.cs",
-              "DocumentMoniker": "D:\\NT106-final\\Server_BattleShips\\Backend\\Server\\Player.cs",
+              "DocumentMoniker": "D:\\NT106-final\\BanTau\\Backend\\Server\\Player.cs",
               "RelativeDocumentMoniker": "Server\\Player.cs",
-              "ToolTip": "D:\\NT106-final\\Server_BattleShips\\Backend\\Server\\Player.cs",
+              "ToolTip": "D:\\NT106-final\\BanTau\\Backend\\Server\\Player.cs",
               "RelativeToolTip": "Server\\Player.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -93,26 +91,27 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Room.cs",
-              "DocumentMoniker": "D:\\NT106-final\\Server_BattleShips\\Backend\\Server\\Room.cs",
+              "DocumentMoniker": "D:\\NT106-final\\BanTau\\Backend\\Server\\Room.cs",
               "RelativeDocumentMoniker": "Server\\Room.cs",
-              "ToolTip": "D:\\NT106-final\\Server_BattleShips\\Backend\\Server\\Room.cs",
+              "ToolTip": "D:\\NT106-final\\BanTau\\Backend\\Server\\Room.cs",
               "RelativeToolTip": "Server\\Room.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAA3wAoAAAAoAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-07T15:54:21.863Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "Game.cs",
-              "DocumentMoniker": "D:\\NT106-final\\Server_BattleShips\\Backend\\Server\\Game.cs",
+              "DocumentMoniker": "D:\\NT106-final\\BanTau\\Backend\\Server\\Game.cs",
               "RelativeDocumentMoniker": "Server\\Game.cs",
-              "ToolTip": "D:\\NT106-final\\Server_BattleShips\\Backend\\Server\\Game.cs",
+              "ToolTip": "D:\\NT106-final\\BanTau\\Backend\\Server\\Game.cs",
               "RelativeToolTip": "Server\\Game.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAABhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-07T15:54:45.304Z"
+              "WhenOpened": "2024-10-07T15:54:45.304Z",
+              "EditorCaption": ""
             }
           ]
         }

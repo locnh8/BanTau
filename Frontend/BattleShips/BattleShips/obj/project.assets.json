@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\NT106-final\\Clone\\BattleShips\\Frontend\\BattleShips\\BattleShips\\BattleShips.csproj",
+      "projectUniqueName": "D:\\NT106-final\\BanTau\\Frontend\\BattleShips\\BattleShips\\BattleShips.csproj",
       "projectName": "BattleShips",
-      "projectPath": "D:\\NT106-final\\Clone\\BattleShips\\Frontend\\BattleShips\\BattleShips\\BattleShips.csproj",
+      "projectPath": "D:\\NT106-final\\BanTau\\Frontend\\BattleShips\\BattleShips\\BattleShips.csproj",
       "packagesPath": "C:\\Users\\Hoang Loc\\.nuget\\packages\\",
-      "outputPath": "D:\\NT106-final\\Clone\\BattleShips\\Frontend\\BattleShips\\BattleShips\\obj\\",
+      "outputPath": "D:\\NT106-final\\BanTau\\Frontend\\BattleShips\\BattleShips\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Hoang Loc\\AppData\\Roaming\\NuGet\\NuGet.Config",

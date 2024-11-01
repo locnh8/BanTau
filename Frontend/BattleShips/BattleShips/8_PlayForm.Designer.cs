@@ -53,9 +53,9 @@
             // 
             pBoxMe.BackgroundImage = Properties.Resources.boat;
             pBoxMe.BackgroundImageLayout = ImageLayout.Stretch;
-            pBoxMe.Location = new Point(178, 60);
+            pBoxMe.Location = new Point(200, 39);
             pBoxMe.Name = "pBoxMe";
-            pBoxMe.Size = new Size(98, 72);
+            pBoxMe.Size = new Size(110, 76);
             pBoxMe.TabIndex = 0;
             pBoxMe.TabStop = false;
             // 
@@ -63,9 +63,9 @@
             // 
             pBoxDeskMe.BackgroundImage = Properties.Resources.bg;
             pBoxDeskMe.BackgroundImageLayout = ImageLayout.Stretch;
-            pBoxDeskMe.Location = new Point(178, 138);
+            pBoxDeskMe.Location = new Point(226, -85);
             pBoxDeskMe.Name = "pBoxDeskMe";
-            pBoxDeskMe.Size = new Size(300, 300);
+            pBoxDeskMe.Size = new Size(396, 396);
             pBoxDeskMe.TabIndex = 1;
             pBoxDeskMe.TabStop = false;
             pBoxDeskMe.Paint += pBoxDeskMe_Paint;
@@ -74,9 +74,9 @@
             // 
             pBoxDeskEnemy.BackgroundImage = (Image)resources.GetObject("pBoxDeskEnemy.BackgroundImage");
             pBoxDeskEnemy.BackgroundImageLayout = ImageLayout.Stretch;
-            pBoxDeskEnemy.Location = new Point(497, 138);
+            pBoxDeskEnemy.Location = new Point(661, 135);
             pBoxDeskEnemy.Name = "pBoxDeskEnemy";
-            pBoxDeskEnemy.Size = new Size(300, 300);
+            pBoxDeskEnemy.Size = new Size(396, 396);
             pBoxDeskEnemy.TabIndex = 2;
             pBoxDeskEnemy.TabStop = false;
             pBoxDeskEnemy.Click += pBoxDeskEnemy_Click;
@@ -87,9 +87,9 @@
             // 
             pBoxEnemy.BackgroundImage = Properties.Resources.user;
             pBoxEnemy.BackgroundImageLayout = ImageLayout.Stretch;
-            pBoxEnemy.Location = new Point(699, 60);
+            pBoxEnemy.Location = new Point(729, 32);
             pBoxEnemy.Name = "pBoxEnemy";
-            pBoxEnemy.Size = new Size(98, 72);
+            pBoxEnemy.Size = new Size(110, 76);
             pBoxEnemy.TabIndex = 3;
             pBoxEnemy.TabStop = false;
             // 
@@ -97,10 +97,10 @@
             // 
             textBox1.BackColor = Color.White;
             textBox1.Font = new Font("Arial", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 163);
-            textBox1.Location = new Point(31, 60);
+            textBox1.Location = new Point(35, 63);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(125, 378);
+            textBox1.Size = new Size(140, 397);
             textBox1.TabIndex = 4;
             // 
             // label1
@@ -109,9 +109,9 @@
             label1.BackColor = Color.Transparent;
             label1.FlatStyle = FlatStyle.Flat;
             label1.Font = new Font("Algerian", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(31, 37);
+            label1.Location = new Point(35, 39);
             label1.Name = "label1";
-            label1.Size = new Size(57, 19);
+            label1.Size = new Size(58, 20);
             label1.TabIndex = 5;
             label1.Text = "Chat";
             // 
@@ -126,7 +126,7 @@
             btnExit.FlatStyle = FlatStyle.Flat;
             btnExit.Location = new Point(0, 0);
             btnExit.Name = "btnExit";
-            btnExit.Size = new Size(30, 29);
+            btnExit.Size = new Size(34, 30);
             btnExit.TabIndex = 6;
             btnExit.UseVisualStyleBackColor = false;
             btnExit.Click += btnExit_Click;
@@ -137,9 +137,9 @@
             lbMyName.BackColor = Color.Transparent;
             lbMyName.FlatStyle = FlatStyle.Flat;
             lbMyName.Font = new Font("Algerian", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lbMyName.Location = new Point(178, 36);
+            lbMyName.Location = new Point(200, 10);
             lbMyName.Name = "lbMyName";
-            lbMyName.Size = new Size(59, 19);
+            lbMyName.Size = new Size(62, 20);
             lbMyName.TabIndex = 7;
             lbMyName.Text = "Name";
             // 
@@ -149,24 +149,24 @@
             lbEnemyName.BackColor = Color.Transparent;
             lbEnemyName.FlatStyle = FlatStyle.Flat;
             lbEnemyName.Font = new Font("Algerian", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lbEnemyName.Location = new Point(699, 36);
+            lbEnemyName.Location = new Point(777, 9);
             lbEnemyName.Name = "lbEnemyName";
-            lbEnemyName.Size = new Size(59, 19);
+            lbEnemyName.Size = new Size(62, 20);
             lbEnemyName.TabIndex = 8;
             lbEnemyName.Text = "Name";
             // 
             // meProgress
             // 
-            meProgress.Location = new Point(178, 130);
+            meProgress.Location = new Point(200, 136);
             meProgress.Name = "meProgress";
-            meProgress.Size = new Size(300, 10);
+            meProgress.Size = new Size(338, 10);
             meProgress.TabIndex = 9;
             // 
             // enemyprogress
             // 
-            enemyprogress.Location = new Point(497, 129);
+            enemyprogress.Location = new Point(684, 134);
             enemyprogress.Name = "enemyprogress";
-            enemyprogress.Size = new Size(300, 11);
+            enemyprogress.Size = new Size(338, 12);
             enemyprogress.TabIndex = 10;
             // 
             // afkTimer
@@ -179,11 +179,11 @@
             // 
             // PlayForm
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1081, 549);
             Controls.Add(enemyprogress);
             Controls.Add(meProgress);
             Controls.Add(lbEnemyName);

@@ -41,7 +41,7 @@ namespace BattleShips
 
         private void btnReady_Click(object sender, EventArgs e)
         {
-          
+            Network.Instance.SendMsg(6, Game.me.roomID, Game.me.cName);
         }
 
         private void ShipDeployment_Paint(object sender, PaintEventArgs e)
@@ -128,30 +128,35 @@ namespace BattleShips
                             {
                                 pBoxShip1.Enabled = false;
                                 pBoxShip1.BackColor = Color.Transparent;
+                                pBoxShip1.Image = null;
                                 break;
                             }
                         case 1:
                             {
                                 pBoxShip2.Enabled = false;
                                 pBoxShip2.BackColor = Color.Transparent;
+                                pBoxShip2.Image = null;
                                 break;
                             }
                         case 2:
                             {
                                 pBoxShip3.Enabled = false;
                                 pBoxShip3.BackColor = Color.Transparent;
+                                pBoxShip3.Image = null;
                                 break;
                             }
                         case 3:
                             {
                                 pBoxShip4.Enabled = false;
                                 pBoxShip4.BackColor = Color.Transparent;
+                                pBoxShip4.Image = null;
                                 break;
                             }
                         case 4:
                             {
                                 pBoxShip5.Enabled = false;
                                 pBoxShip5.BackColor = Color.Transparent;
+                                pBoxShip5.Image = null;
                                 break;
                             }
                     }
@@ -214,9 +219,25 @@ namespace BattleShips
             currentShip = 4;
         }
 
-        //public void UpdateRoomLabel(string text)
-        //{
-        //    roomIDLabel.Text = $"ID: {text}";
-        //}
+        private delegate void SafeUpdateStartGame(Form form);
+        public void startGame(Form form)
+        {
+            if (form.InvokeRequired)
+            {
+                var d = new SafeUpdateStartGame(startGame);
+                form.Invoke(d, new object[] { form });
+            }
+            else
+            {
+                PlayForm myDeck = new PlayForm();
+                myDeck.Text = Game.me.cName;
+                myDeck.Show();
+
+                Network.Instance.SendPlayerInfo(Game.me, Game.me.roomID);
+
+                form.Hide();
+            }
+        }
+
     }
 }
