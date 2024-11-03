@@ -72,10 +72,10 @@
             panel1.Controls.Add(mePBox1);
             panel1.Controls.Add(playerPBox1);
             panel1.Controls.Add(winlostPBox);
-            panel1.Location = new Point(0, 66);
+            panel1.Location = new Point(0, 63);
             panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(896, 131);
+            panel1.Size = new Size(796, 125);
             panel1.TabIndex = 1;
             // 
             // bsLabel
@@ -83,9 +83,9 @@
             bsLabel.AutoSize = true;
             bsLabel.Font = new Font("Arial Rounded MT Bold", 28.2F, FontStyle.Italic, GraphicsUnit.Point, 0);
             bsLabel.ForeColor = Color.FromArgb(192, 0, 0);
-            bsLabel.Location = new Point(399, 13);
+            bsLabel.Location = new Point(355, 12);
             bsLabel.Name = "bsLabel";
-            bsLabel.Size = new Size(91, 56);
+            bsLabel.Size = new Size(86, 54);
             bsLabel.TabIndex = 1;
             bsLabel.Text = "VS";
             // 
@@ -95,10 +95,10 @@
             playerPBox.BackgroundImage = Properties.Resources.American;
             playerPBox.BackgroundImageLayout = ImageLayout.Zoom;
             playerPBox.BorderStyle = BorderStyle.FixedSingle;
-            playerPBox.Location = new Point(801, 10);
+            playerPBox.Location = new Point(712, 10);
             playerPBox.Margin = new Padding(3, 4, 3, 4);
             playerPBox.Name = "playerPBox";
-            playerPBox.Size = new Size(85, 99);
+            playerPBox.Size = new Size(76, 94);
             playerPBox.TabIndex = 4;
             playerPBox.TabStop = false;
             // 
@@ -108,10 +108,10 @@
             mePBox.BackgroundImage = Properties.Resources.Russia;
             mePBox.BackgroundImageLayout = ImageLayout.Zoom;
             mePBox.BorderStyle = BorderStyle.FixedSingle;
-            mePBox.Location = new Point(9, 10);
+            mePBox.Location = new Point(8, 10);
             mePBox.Margin = new Padding(3, 4, 3, 4);
             mePBox.Name = "mePBox";
-            mePBox.Size = new Size(85, 99);
+            mePBox.Size = new Size(76, 94);
             mePBox.TabIndex = 3;
             mePBox.TabStop = false;
             // 
@@ -120,9 +120,9 @@
             playerLabel.AutoSize = true;
             playerLabel.Font = new Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             playerLabel.ForeColor = Color.FromArgb(192, 64, 0);
-            playerLabel.Location = new Point(677, 37);
+            playerLabel.Location = new Point(602, 35);
             playerLabel.Name = "playerLabel";
-            playerLabel.Size = new Size(97, 33);
+            playerLabel.Size = new Size(94, 32);
             playerLabel.TabIndex = 3;
             playerLabel.Text = "Name";
             playerLabel.TextAlign = ContentAlignment.MiddleLeft;
@@ -132,9 +132,9 @@
             meLabel.AutoSize = true;
             meLabel.Font = new Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             meLabel.ForeColor = Color.FromArgb(192, 64, 0);
-            meLabel.Location = new Point(102, 37);
+            meLabel.Location = new Point(91, 35);
             meLabel.Name = "meLabel";
-            meLabel.Size = new Size(97, 33);
+            meLabel.Size = new Size(94, 32);
             meLabel.TabIndex = 2;
             meLabel.Text = "Name";
             meLabel.TextAlign = ContentAlignment.MiddleRight;
@@ -146,7 +146,7 @@
             mePBox1.Location = new Point(3, 4);
             mePBox1.Margin = new Padding(3, 4, 3, 4);
             mePBox1.Name = "mePBox1";
-            mePBox1.Size = new Size(96, 112);
+            mePBox1.Size = new Size(86, 107);
             mePBox1.TabIndex = 7;
             mePBox1.TabStop = false;
             // 
@@ -154,10 +154,10 @@
             // 
             playerPBox1.BackColor = Color.Black;
             playerPBox1.BorderStyle = BorderStyle.FixedSingle;
-            playerPBox1.Location = new Point(795, 4);
+            playerPBox1.Location = new Point(707, 4);
             playerPBox1.Margin = new Padding(3, 4, 3, 4);
             playerPBox1.Name = "playerPBox1";
-            playerPBox1.Size = new Size(96, 112);
+            playerPBox1.Size = new Size(86, 107);
             playerPBox1.TabIndex = 8;
             playerPBox1.TabStop = false;
             // 
@@ -167,7 +167,7 @@
             winlostPBox.Location = new Point(0, 0);
             winlostPBox.Margin = new Padding(3, 4, 3, 4);
             winlostPBox.Name = "winlostPBox";
-            winlostPBox.Size = new Size(896, 131);
+            winlostPBox.Size = new Size(796, 125);
             winlostPBox.SizeMode = PictureBoxSizeMode.Zoom;
             winlostPBox.TabIndex = 9;
             winlostPBox.TabStop = false;
@@ -175,21 +175,21 @@
             // playerProgress
             // 
             playerProgress.Anchor = AnchorStyles.Bottom;
-            playerProgress.Location = new Point(448, 188);
+            playerProgress.Location = new Point(398, 179);
             playerProgress.Margin = new Padding(3, 4, 3, 4);
             playerProgress.Maximum = 60;
             playerProgress.Name = "playerProgress";
-            playerProgress.Size = new Size(448, 13);
+            playerProgress.Size = new Size(398, 12);
             playerProgress.TabIndex = 5;
             // 
             // meProgress
             // 
             meProgress.Anchor = AnchorStyles.Bottom;
-            meProgress.Location = new Point(0, 188);
+            meProgress.Location = new Point(0, 179);
             meProgress.Margin = new Padding(3, 4, 3, 4);
             meProgress.Maximum = 60;
             meProgress.Name = "meProgress";
-            meProgress.Size = new Size(448, 13);
+            meProgress.Size = new Size(398, 12);
             meProgress.Step = 1;
             meProgress.TabIndex = 3;
             // 
@@ -198,18 +198,19 @@
             panel2.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             panel2.BorderStyle = BorderStyle.FixedSingle;
             panel2.Controls.Add(pictureBox2);
-            panel2.Location = new Point(0, 200);
+            panel2.Location = new Point(0, 190);
             panel2.Margin = new Padding(3, 4, 3, 4);
             panel2.Name = "panel2";
-            panel2.Size = new Size(448, 522);
+            panel2.Size = new Size(398, 398);
             panel2.TabIndex = 2;
             // 
             // pictureBox2
             // 
+            pictureBox2.Dock = DockStyle.Fill;
             pictureBox2.Image = Properties.Resources.bg;
             pictureBox2.Location = new Point(0, 0);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(398, 398);
+            pictureBox2.Size = new Size(396, 396);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 1;
             pictureBox2.TabStop = false;
@@ -219,14 +220,15 @@
             // 
             panel3.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             panel3.Controls.Add(pictureBox1);
-            panel3.Location = new Point(448, 200);
+            panel3.Location = new Point(398, 190);
             panel3.Margin = new Padding(3, 4, 3, 4);
             panel3.Name = "panel3";
-            panel3.Size = new Size(448, 522);
+            panel3.Size = new Size(398, 398);
             panel3.TabIndex = 4;
             // 
             // pictureBox1
             // 
+            pictureBox1.Dock = DockStyle.Fill;
             pictureBox1.Image = Properties.Resources.bg;
             pictureBox1.Location = new Point(0, 0);
             pictureBox1.Name = "pictureBox1";
@@ -257,7 +259,7 @@
             panel4.Location = new Point(0, 0);
             panel4.Margin = new Padding(3, 4, 3, 4);
             panel4.Name = "panel4";
-            panel4.Size = new Size(896, 722);
+            panel4.Size = new Size(796, 688);
             panel4.TabIndex = 0;
             // 
             // backBtn
@@ -269,16 +271,16 @@
             backBtn.Location = new Point(3, 7);
             backBtn.Margin = new Padding(3, 4, 3, 4);
             backBtn.Name = "backBtn";
-            backBtn.Size = new Size(45, 52);
+            backBtn.Size = new Size(40, 50);
             backBtn.TabIndex = 0;
             backBtn.UseVisualStyleBackColor = true;
             backBtn.Click += backBtn_Click;
             // 
             // PlayForm
             // 
-            AutoScaleDimensions = new SizeF(9F, 21F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(896, 722);
+            ClientSize = new Size(796, 688);
             Controls.Add(meProgress);
             Controls.Add(playerProgress);
             Controls.Add(panel3);
