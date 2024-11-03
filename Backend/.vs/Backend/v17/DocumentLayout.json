@@ -44,7 +44,7 @@
               "RelativeDocumentMoniker": "Server\\Network.cs",
               "ToolTip": "D:\\NT106-final\\BanTau\\Backend\\Server\\Network.cs",
               "RelativeToolTip": "Server\\Network.cs",
-              "ViewState": "AQIAAIcAAAAAAAAAAAAowJ4AAAAZAAAA",
+              "ViewState": "AQIAALoAAAAAAAAAAAAiwM4AAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-07T15:05:40.395Z",
               "IsPinned": true,
@@ -85,8 +85,7 @@
               "RelativeToolTip": "Server\\Player.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T04:48:14.56Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T04:48:14.56Z"
             },
             {
               "$type": "Document",
@@ -110,8 +109,7 @@
               "RelativeToolTip": "Server\\Game.cs",
               "ViewState": "AQIAABQAAAAAAAAAAAAAwA0AAABhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-07T15:54:45.304Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-07T15:54:45.304Z"
             }
           ]
         }

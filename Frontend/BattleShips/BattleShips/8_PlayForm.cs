@@ -273,8 +273,27 @@ namespace BattleShips
                 this.Hide();
                 this.Dispose();
 
-                Network.DeployShip.Dispose();;
+                Network.DeployShip.Dispose(); ;
                 //Network.mainMenu.Show();
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Network.Instance.SendMsg(8, Game.me.roomID, Game.me.cName, textBox1.Text) ;
+        }
+
+        private delegate void SafeUpdateChat(string msg);
+        public void UpdateChat(string msg)
+        {
+            if (richTextBox1.InvokeRequired)
+            {
+                var d = new SafeUpdateChat(UpdateChat);
+                richTextBox1.Invoke(d, new object[] { msg });
+            }
+            else
+            {
+                richTextBox1.Text += msg + Environment.NewLine;
             }
         }
     }

@@ -238,6 +238,12 @@ namespace Battleships
                     string playerWin = msgPayload[2];
                     playform.PerformWin(playerWin, playform);
                 }
+                else if(code == 8)
+                {
+                    string RoomID = msgPayload[1];
+                    string Message = msgPayload[2];
+                    playform.UpdateChat(Message);
+                }
             }
             catch (Exception ex)
             {

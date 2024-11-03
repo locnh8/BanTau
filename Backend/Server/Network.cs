@@ -193,6 +193,13 @@ namespace Server
                                 sendToRoom(6, roomID);
                             }
                         }
+                        else if (code == 8)
+                        {
+                            string roomID = msgPayload[1];
+                            string player = msgPayload[2];
+                            string message = player + ": " + msgPayload[3]; 
+                            sendToRoom(8, roomID, message);
+                    }
                     }
             }
             catch
