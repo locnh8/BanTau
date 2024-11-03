@@ -121,11 +121,17 @@
   <data name="screenshot_1653541900" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\screenshot_1653541900.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Ship3_Roger1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Ship3_Roger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="law" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\law.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Russia" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Russia.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="onepiece_ship" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\onepiece_ship.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="victory" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\victory.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ship_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\Ship_4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="png-transparent-explosions-explosion-gunpowder-war-thumbnail" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\png-transparent-explosions-explosion-gunpowder-war-thumbnail.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -133,11 +139,14 @@
   <data name="button" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="defeat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\defeat.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ship5_whireBear" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ship5_whireBear.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Rotate" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Rotate.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="SpeakerMute" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SpeakerMute.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="exit" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -145,11 +154,17 @@
   <data name="background" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\background.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Ship4_thousandSunny" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ship4_thousandSunny.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="onepiece" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\onepiece.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="backgroundTuto" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\backgroundTuto.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Ship3_Roger1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ship3_Roger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ship_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\Ship_5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="user" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\user.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -163,14 +178,20 @@
   <data name="Ship3_Roger" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Ship3_Roger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Ship_3(2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\Ship_3(2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Ship4_thousandSunny1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Ship4_thousandSunny.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Rotate1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Rotate.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Ship5_whireBear" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Ship5_whireBear.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bantau" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\bantau.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="luffy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\luffy.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="SpeakerPlay" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SpeakerPlay.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -181,20 +202,26 @@
   <data name="BackBtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BackBtn.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Scope" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Scope.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Backbtn1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Backbtn1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Ship4_thousandSunny" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Ship4_thousandSunny.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Russia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Russia.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ship2_merymery1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ship2_merymery.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="backgroundTuto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backgroundTuto.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Ship1_OroJackson" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Ship1_OroJackson.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Ship2_merymery1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Ship2_merymery.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="SpeakerMute" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SpeakerMute.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Scope" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Scope.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Ship2_merymery" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Ship2_merymery.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -205,13 +232,22 @@
   <data name="battleship" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\battleship.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Ship_3(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\Ship_3(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bg.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="victory" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\victory.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="onepiecebg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\onepiecebg.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="defeat" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\defeat.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Ship_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\Ship_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="law1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\law.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="luffy1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\luffy.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

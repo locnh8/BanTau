@@ -152,6 +152,8 @@
             // btnReady
             // 
             btnReady.BackColor = Color.Transparent;
+            btnReady.BackgroundImage = Properties.Resources.button;
+            btnReady.BackgroundImageLayout = ImageLayout.Stretch;
             btnReady.FlatAppearance.BorderSize = 0;
             btnReady.FlatAppearance.MouseDownBackColor = Color.Transparent;
             btnReady.FlatAppearance.MouseOverBackColor = Color.Transparent;
@@ -178,7 +180,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImage = Properties.Resources.bantau;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(800, 450);
             Controls.Add(flowLayoutPanel1);

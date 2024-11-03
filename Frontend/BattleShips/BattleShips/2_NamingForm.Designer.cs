@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NamingForm));
             btnQuaylai = new Button();
             btnXacnhan = new Button();
             label1 = new Label();
@@ -38,12 +37,14 @@
             // btnQuaylai
             // 
             btnQuaylai.BackColor = Color.Transparent;
+            btnQuaylai.BackgroundImage = Properties.Resources.button;
+            btnQuaylai.BackgroundImageLayout = ImageLayout.Stretch;
             btnQuaylai.FlatAppearance.BorderSize = 0;
             btnQuaylai.FlatAppearance.MouseDownBackColor = Color.Transparent;
             btnQuaylai.FlatAppearance.MouseOverBackColor = Color.Transparent;
             btnQuaylai.FlatStyle = FlatStyle.Flat;
             btnQuaylai.Font = new Font("Algerian", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnQuaylai.Location = new Point(264, 257);
+            btnQuaylai.Location = new Point(12, 235);
             btnQuaylai.Name = "btnQuaylai";
             btnQuaylai.Size = new Size(121, 47);
             btnQuaylai.TabIndex = 0;
@@ -54,12 +55,14 @@
             // btnXacnhan
             // 
             btnXacnhan.BackColor = Color.Transparent;
+            btnXacnhan.BackgroundImage = Properties.Resources.button;
+            btnXacnhan.BackgroundImageLayout = ImageLayout.Stretch;
             btnXacnhan.FlatAppearance.BorderSize = 0;
             btnXacnhan.FlatAppearance.MouseDownBackColor = Color.Transparent;
             btnXacnhan.FlatAppearance.MouseOverBackColor = Color.Transparent;
             btnXacnhan.FlatStyle = FlatStyle.Flat;
             btnXacnhan.Font = new Font("Algerian", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnXacnhan.Location = new Point(467, 257);
+            btnXacnhan.Location = new Point(269, 235);
             btnXacnhan.Name = "btnXacnhan";
             btnXacnhan.Size = new Size(121, 47);
             btnXacnhan.TabIndex = 1;
@@ -74,7 +77,8 @@
             label1.FlatStyle = FlatStyle.Flat;
             label1.Font = new Font("Algerian", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.Black;
-            label1.Location = new Point(184, 154);
+            label1.Image = Properties.Resources.button;
+            label1.Location = new Point(12, 151);
             label1.Name = "label1";
             label1.Size = new Size(74, 22);
             label1.TabIndex = 2;
@@ -83,7 +87,7 @@
             // txtName
             // 
             txtName.Font = new Font("Algerian", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            txtName.Location = new Point(264, 151);
+            txtName.Location = new Point(92, 148);
             txtName.Multiline = true;
             txtName.Name = "txtName";
             txtName.Size = new Size(324, 34);
@@ -93,7 +97,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImage = Properties.Resources.onepiece_ship;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(800, 450);
             Controls.Add(txtName);

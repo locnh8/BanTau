@@ -48,6 +48,11 @@
             avtTimer = new System.Windows.Forms.Timer(components);
             panel4 = new Panel();
             backBtn = new Button();
+            panel5 = new Panel();
+            richTextBox1 = new RichTextBox();
+            textBox1 = new TextBox();
+            button1 = new Button();
+            label1 = new Label();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)playerPBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)mePBox).BeginInit();
@@ -59,11 +64,14 @@
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel4.SuspendLayout();
+            panel5.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(64, 64, 64);
+            panel1.Controls.Add(meProgress);
+            panel1.Controls.Add(playerProgress);
             panel1.Controls.Add(bsLabel);
             panel1.Controls.Add(playerPBox);
             panel1.Controls.Add(mePBox);
@@ -92,8 +100,8 @@
             // playerPBox
             // 
             playerPBox.BackColor = Color.Transparent;
-            playerPBox.BackgroundImage = Properties.Resources.American;
-            playerPBox.BackgroundImageLayout = ImageLayout.Zoom;
+            playerPBox.BackgroundImage = Properties.Resources.law1;
+            playerPBox.BackgroundImageLayout = ImageLayout.Stretch;
             playerPBox.BorderStyle = BorderStyle.FixedSingle;
             playerPBox.Location = new Point(712, 10);
             playerPBox.Margin = new Padding(3, 4, 3, 4);
@@ -105,8 +113,8 @@
             // mePBox
             // 
             mePBox.BackColor = Color.Transparent;
-            mePBox.BackgroundImage = Properties.Resources.Russia;
-            mePBox.BackgroundImageLayout = ImageLayout.Zoom;
+            mePBox.BackgroundImage = Properties.Resources.luffy1;
+            mePBox.BackgroundImageLayout = ImageLayout.Stretch;
             mePBox.BorderStyle = BorderStyle.FixedSingle;
             mePBox.Location = new Point(8, 10);
             mePBox.Margin = new Padding(3, 4, 3, 4);
@@ -175,7 +183,7 @@
             // playerProgress
             // 
             playerProgress.Anchor = AnchorStyles.Bottom;
-            playerProgress.Location = new Point(398, 179);
+            playerProgress.Location = new Point(398, 113);
             playerProgress.Margin = new Padding(3, 4, 3, 4);
             playerProgress.Maximum = 60;
             playerProgress.Name = "playerProgress";
@@ -185,7 +193,7 @@
             // meProgress
             // 
             meProgress.Anchor = AnchorStyles.Bottom;
-            meProgress.Location = new Point(0, 179);
+            meProgress.Location = new Point(0, 113);
             meProgress.Margin = new Padding(3, 4, 3, 4);
             meProgress.Maximum = 60;
             meProgress.Name = "meProgress";
@@ -206,11 +214,10 @@
             // 
             // pictureBox2
             // 
-            pictureBox2.Dock = DockStyle.Fill;
             pictureBox2.Image = Properties.Resources.bg;
             pictureBox2.Location = new Point(0, 0);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(396, 396);
+            pictureBox2.Size = new Size(398, 398);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 1;
             pictureBox2.TabStop = false;
@@ -220,7 +227,7 @@
             // 
             panel3.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             panel3.Controls.Add(pictureBox1);
-            panel3.Location = new Point(398, 190);
+            panel3.Location = new Point(397, 190);
             panel3.Margin = new Padding(3, 4, 3, 4);
             panel3.Name = "panel3";
             panel3.Size = new Size(398, 398);
@@ -254,16 +261,22 @@
             // 
             panel4.BackColor = Color.FromArgb(64, 64, 64);
             panel4.BorderStyle = BorderStyle.FixedSingle;
+            panel4.Controls.Add(label1);
+            panel4.Controls.Add(button1);
+            panel4.Controls.Add(textBox1);
+            panel4.Controls.Add(panel5);
             panel4.Controls.Add(backBtn);
+            panel4.Controls.Add(panel3);
             panel4.Dock = DockStyle.Fill;
             panel4.Location = new Point(0, 0);
             panel4.Margin = new Padding(3, 4, 3, 4);
             panel4.Name = "panel4";
-            panel4.Size = new Size(796, 688);
+            panel4.Size = new Size(971, 688);
             panel4.TabIndex = 0;
             // 
             // backBtn
             // 
+            backBtn.BackColor = Color.Silver;
             backBtn.BackgroundImage = Properties.Resources.exit;
             backBtn.BackgroundImageLayout = ImageLayout.Zoom;
             backBtn.FlatAppearance.BorderSize = 0;
@@ -273,17 +286,60 @@
             backBtn.Name = "backBtn";
             backBtn.Size = new Size(40, 50);
             backBtn.TabIndex = 0;
-            backBtn.UseVisualStyleBackColor = true;
+            backBtn.UseVisualStyleBackColor = false;
             backBtn.Click += backBtn_Click;
+            // 
+            // panel5
+            // 
+            panel5.Controls.Add(richTextBox1);
+            panel5.Location = new Point(798, 62);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(170, 524);
+            panel5.TabIndex = 5;
+            // 
+            // richTextBox1
+            // 
+            richTextBox1.Dock = DockStyle.Fill;
+            richTextBox1.Location = new Point(0, 0);
+            richTextBox1.Name = "richTextBox1";
+            richTextBox1.Size = new Size(170, 524);
+            richTextBox1.TabIndex = 0;
+            richTextBox1.Text = "";
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(3, 592);
+            textBox1.Multiline = true;
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(792, 45);
+            textBox1.TabIndex = 6;
+            // 
+            // button1
+            // 
+            button1.Font = new Font("Arial", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 163);
+            button1.Location = new Point(798, 592);
+            button1.Name = "button1";
+            button1.Size = new Size(168, 45);
+            button1.TabIndex = 7;
+            button1.Text = "Gửi";
+            button1.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.BackColor = Color.White;
+            label1.Font = new Font("Arial", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 163);
+            label1.Location = new Point(798, 32);
+            label1.Name = "label1";
+            label1.Size = new Size(78, 27);
+            label1.TabIndex = 8;
+            label1.Text = "Chat: ";
             // 
             // PlayForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(796, 688);
-            Controls.Add(meProgress);
-            Controls.Add(playerProgress);
-            Controls.Add(panel3);
+            ClientSize = new Size(971, 688);
             Controls.Add(panel2);
             Controls.Add(panel1);
             Controls.Add(panel4);
@@ -306,6 +362,8 @@
             panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel4.ResumeLayout(false);
+            panel4.PerformLayout();
+            panel5.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -330,5 +388,10 @@
         private System.Windows.Forms.PictureBox winlostPBox;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button backBtn;
+        private Button button1;
+        private TextBox textBox1;
+        private Panel panel5;
+        private RichTextBox richTextBox1;
+        private Label label1;
     }
 }

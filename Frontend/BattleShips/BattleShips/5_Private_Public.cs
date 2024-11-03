@@ -51,5 +51,11 @@ namespace BattleShips
         {
             Network.Instance.SendMsg(1, Game.me.cName);
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+           Network.create.Show();
+            this.Close();
+        }
     }
 }

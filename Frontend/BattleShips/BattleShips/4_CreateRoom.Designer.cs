@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CreateRoom));
             button1 = new Button();
             button2 = new Button();
             label1 = new Label();
@@ -39,12 +38,14 @@
             // button1
             // 
             button1.BackColor = Color.Transparent;
+            button1.BackgroundImage = Properties.Resources.button;
+            button1.BackgroundImageLayout = ImageLayout.Stretch;
             button1.FlatAppearance.BorderSize = 0;
             button1.FlatAppearance.MouseDownBackColor = Color.Transparent;
             button1.FlatAppearance.MouseOverBackColor = Color.Transparent;
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Algerian", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.Location = new Point(273, 106);
+            button1.Location = new Point(276, 73);
             button1.Name = "button1";
             button1.Size = new Size(252, 53);
             button1.TabIndex = 0;
@@ -55,12 +56,14 @@
             // button2
             // 
             button2.BackColor = Color.Transparent;
+            button2.BackgroundImage = Properties.Resources.button;
+            button2.BackgroundImageLayout = ImageLayout.Stretch;
             button2.FlatAppearance.BorderSize = 0;
             button2.FlatAppearance.MouseDownBackColor = Color.Transparent;
             button2.FlatAppearance.MouseOverBackColor = Color.Transparent;
             button2.FlatStyle = FlatStyle.Flat;
             button2.Font = new Font("Algerian", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.Location = new Point(503, 191);
+            button2.Location = new Point(496, 142);
             button2.Name = "button2";
             button2.Size = new Size(129, 37);
             button2.TabIndex = 1;
@@ -74,7 +77,8 @@
             label1.BackColor = Color.Transparent;
             label1.FlatStyle = FlatStyle.Flat;
             label1.Font = new Font("Algerian", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(194, 198);
+            label1.Image = Properties.Resources.button;
+            label1.Location = new Point(187, 149);
             label1.Name = "label1";
             label1.Size = new Size(98, 22);
             label1.TabIndex = 2;
@@ -83,7 +87,7 @@
             // textBox1
             // 
             textBox1.Font = new Font("Algerian", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(298, 197);
+            textBox1.Location = new Point(291, 148);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(199, 31);
@@ -92,12 +96,14 @@
             // btnBack
             // 
             btnBack.BackColor = Color.Transparent;
+            btnBack.BackgroundImage = Properties.Resources.button;
+            btnBack.BackgroundImageLayout = ImageLayout.Stretch;
             btnBack.FlatAppearance.BorderSize = 0;
             btnBack.FlatAppearance.MouseDownBackColor = Color.Transparent;
             btnBack.FlatAppearance.MouseOverBackColor = Color.Transparent;
             btnBack.FlatStyle = FlatStyle.Flat;
             btnBack.Font = new Font("Algerian", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnBack.Location = new Point(-2, -1);
+            btnBack.Location = new Point(1, 3);
             btnBack.Name = "btnBack";
             btnBack.Size = new Size(94, 33);
             btnBack.TabIndex = 4;
@@ -109,7 +115,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImage = Properties.Resources.bantau;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(800, 450);
             Controls.Add(btnBack);

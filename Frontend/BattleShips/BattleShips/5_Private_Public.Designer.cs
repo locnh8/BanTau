@@ -28,15 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Private_Public));
             button1 = new Button();
             button2 = new Button();
             label1 = new Label();
+            button3 = new Button();
             SuspendLayout();
             // 
             // button1
             // 
             button1.BackColor = Color.Transparent;
+            button1.BackgroundImage = Properties.Resources.button;
+            button1.BackgroundImageLayout = ImageLayout.Stretch;
             button1.FlatAppearance.BorderSize = 0;
             button1.FlatAppearance.MouseDownBackColor = Color.Transparent;
             button1.FlatAppearance.MouseOverBackColor = Color.Transparent;
@@ -53,6 +55,8 @@
             // button2
             // 
             button2.BackColor = Color.Transparent;
+            button2.BackgroundImage = Properties.Resources.button;
+            button2.BackgroundImageLayout = ImageLayout.Stretch;
             button2.FlatAppearance.BorderSize = 0;
             button2.FlatAppearance.MouseDownBackColor = Color.Transparent;
             button2.FlatAppearance.MouseOverBackColor = Color.Transparent;
@@ -78,12 +82,29 @@
             label1.TabIndex = 2;
             label1.Text = "Play with friends or play with strangers";
             // 
+            // button3
+            // 
+            button3.BackgroundImage = Properties.Resources.button;
+            button3.BackgroundImageLayout = ImageLayout.Stretch;
+            button3.FlatAppearance.BorderSize = 0;
+            button3.FlatStyle = FlatStyle.Flat;
+            button3.Font = new Font("Algerian", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button3.Location = new Point(2, 3);
+            button3.Name = "button3";
+            button3.Size = new Size(94, 29);
+            button3.TabIndex = 3;
+            button3.Text = "Back";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
+            // 
             // Private_Public
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImage = Properties.Resources.bantau;
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(800, 450);
+            Controls.Add(button3);
             Controls.Add(label1);
             Controls.Add(button2);
             Controls.Add(button1);
@@ -97,5 +118,6 @@
         private Button button1;
         private Button button2;
         private Label label1;
+        private Button button3;
     }
 }

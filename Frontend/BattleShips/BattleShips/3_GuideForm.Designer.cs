@@ -30,8 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GuideForm));
             btnQuayLai = new Button();
-            label1 = new Label();
             label2 = new Label();
+            panel1 = new Panel();
+            label1 = new Label();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // btnQuayLai
@@ -43,27 +45,13 @@
             btnQuayLai.FlatStyle = FlatStyle.Flat;
             btnQuayLai.Font = new Font("Algerian", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnQuayLai.ForeColor = Color.Black;
-            btnQuayLai.Location = new Point(303, 481);
+            btnQuayLai.Location = new Point(-10, 2);
             btnQuayLai.Name = "btnQuayLai";
             btnQuayLai.Size = new Size(187, 50);
             btnQuayLai.TabIndex = 0;
             btnQuayLai.Text = "Back";
             btnQuayLai.UseVisualStyleBackColor = false;
             btnQuayLai.Click += btnQuayLai_Click;
-            // 
-            // label1
-            // 
-            label1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            label1.BackColor = Color.Transparent;
-            label1.FlatStyle = FlatStyle.Flat;
-            label1.Font = new Font("Algerian", 16.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.Black;
-            label1.Location = new Point(-2, 61);
-            label1.Name = "label1";
-            label1.Size = new Size(800, 405);
-            label1.TabIndex = 6;
-            label1.Text = resources.GetString("label1.Text");
-            label1.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label2
             // 
@@ -78,17 +66,40 @@
             label2.TabIndex = 2;
             label2.Text = "Guide";
             // 
+            // panel1
+            // 
+            panel1.Controls.Add(label1);
+            panel1.Location = new Point(34, 58);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(721, 485);
+            panel1.TabIndex = 7;
+            // 
+            // label1
+            // 
+            label1.BackColor = Color.Transparent;
+            label1.Dock = DockStyle.Fill;
+            label1.FlatStyle = FlatStyle.Flat;
+            label1.Font = new Font("Algerian", 16.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.Black;
+            label1.Location = new Point(0, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(721, 485);
+            label1.TabIndex = 7;
+            label1.Text = resources.GetString("label1.Text");
+            label1.TextAlign = ContentAlignment.MiddleCenter;
+            // 
             // GuideForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImage = Properties.Resources.onepiece_ship;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(801, 543);
+            Controls.Add(panel1);
             Controls.Add(label2);
-            Controls.Add(label1);
             Controls.Add(btnQuayLai);
             Name = "GuideForm";
+            panel1.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -96,7 +107,8 @@
         #endregion
 
         private Button btnQuayLai;
-        private Label label1;
         private Label label2;
+        private Panel panel1;
+        private Label label1;
     }
 }

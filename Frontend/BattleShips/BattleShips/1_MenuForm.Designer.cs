@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuForm));
             btnChoi = new Button();
             BtnLuat = new Button();
             btnThoat = new Button();
@@ -37,12 +36,14 @@
             // btnChoi
             // 
             btnChoi.BackColor = Color.Transparent;
+            btnChoi.BackgroundImage = Properties.Resources.button;
+            btnChoi.BackgroundImageLayout = ImageLayout.Stretch;
             btnChoi.FlatAppearance.BorderSize = 0;
             btnChoi.FlatAppearance.MouseDownBackColor = Color.Transparent;
             btnChoi.FlatAppearance.MouseOverBackColor = Color.Transparent;
             btnChoi.FlatStyle = FlatStyle.Flat;
             btnChoi.Font = new Font("Algerian", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnChoi.Location = new Point(102, 105);
+            btnChoi.Location = new Point(112, 287);
             btnChoi.Name = "btnChoi";
             btnChoi.Size = new Size(123, 48);
             btnChoi.TabIndex = 0;
@@ -53,12 +54,14 @@
             // BtnLuat
             // 
             BtnLuat.BackColor = Color.Transparent;
+            BtnLuat.BackgroundImage = Properties.Resources.button;
+            BtnLuat.BackgroundImageLayout = ImageLayout.Stretch;
             BtnLuat.FlatAppearance.BorderSize = 0;
             BtnLuat.FlatAppearance.MouseDownBackColor = Color.Transparent;
             BtnLuat.FlatAppearance.MouseOverBackColor = Color.Transparent;
             BtnLuat.FlatStyle = FlatStyle.Flat;
             BtnLuat.Font = new Font("Algerian", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            BtnLuat.Location = new Point(102, 179);
+            BtnLuat.Location = new Point(350, 287);
             BtnLuat.Name = "BtnLuat";
             BtnLuat.Size = new Size(123, 48);
             BtnLuat.TabIndex = 1;
@@ -69,12 +72,14 @@
             // btnThoat
             // 
             btnThoat.BackColor = Color.Transparent;
+            btnThoat.BackgroundImage = Properties.Resources.button;
+            btnThoat.BackgroundImageLayout = ImageLayout.Stretch;
             btnThoat.FlatAppearance.BorderSize = 0;
             btnThoat.FlatAppearance.MouseDownBackColor = Color.Transparent;
             btnThoat.FlatAppearance.MouseOverBackColor = Color.Transparent;
             btnThoat.FlatStyle = FlatStyle.Flat;
             btnThoat.Font = new Font("Algerian", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnThoat.Location = new Point(102, 253);
+            btnThoat.Location = new Point(597, 287);
             btnThoat.Name = "btnThoat";
             btnThoat.Size = new Size(123, 48);
             btnThoat.TabIndex = 2;
@@ -86,7 +91,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImage = Properties.Resources.onepiecebg;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(800, 450);
             Controls.Add(btnThoat);

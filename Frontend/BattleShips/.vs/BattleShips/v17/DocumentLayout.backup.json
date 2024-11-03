@@ -7,6 +7,14 @@
       "RelativeMoniker": "D:0:0:{B693055A-8CFD-4E74-A30A-A2948801A809}|BattleShips\\BattleShips.csproj|solutionrelative:battleships\\8_playform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{B693055A-8CFD-4E74-A30A-A2948801A809}|BattleShips\\BattleShips.csproj|d:\\bantau\\bantau\\frontend\\battleships\\battleships\\8_playform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B693055A-8CFD-4E74-A30A-A2948801A809}|BattleShips\\BattleShips.csproj|solutionrelative:battleships\\8_playform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B693055A-8CFD-4E74-A30A-A2948801A809}|BattleShips\\BattleShips.csproj|D:\\bantau\\BanTau\\Frontend\\BattleShips\\battleships\\7_shipdeployment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B693055A-8CFD-4E74-A30A-A2948801A809}|BattleShips\\BattleShips.csproj|solutionrelative:battleships\\7_shipdeployment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B693055A-8CFD-4E74-A30A-A2948801A809}|BattleShips\\BattleShips.csproj|d:\\bantau\\bantau\\frontend\\battleships\\battleships\\network.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B693055A-8CFD-4E74-A30A-A2948801A809}|BattleShips\\BattleShips.csproj|solutionrelative:battleships\\network.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -17,14 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{B693055A-8CFD-4E74-A30A-A2948801A809}|BattleShips\\BattleShips.csproj|d:\\bantau\\bantau\\frontend\\battleships\\battleships\\7_shipdeployment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B693055A-8CFD-4E74-A30A-A2948801A809}|BattleShips\\BattleShips.csproj|solutionrelative:battleships\\7_shipdeployment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B693055A-8CFD-4E74-A30A-A2948801A809}|BattleShips\\BattleShips.csproj|D:\\bantau\\BanTau\\Frontend\\BattleShips\\battleships\\7_shipdeployment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B693055A-8CFD-4E74-A30A-A2948801A809}|BattleShips\\BattleShips.csproj|solutionrelative:battleships\\7_shipdeployment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B693055A-8CFD-4E74-A30A-A2948801A809}|BattleShips\\BattleShips.csproj|d:\\bantau\\bantau\\frontend\\battleships\\battleships\\8_playform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B693055A-8CFD-4E74-A30A-A2948801A809}|BattleShips\\BattleShips.csproj|solutionrelative:battleships\\8_playform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B693055A-8CFD-4E74-A30A-A2948801A809}|BattleShips\\BattleShips.csproj|d:\\bantau\\bantau\\frontend\\battleships\\battleships\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -82,7 +82,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Network.cs",
               "DocumentMoniker": "D:\\bantau\\BanTau\\Frontend\\BattleShips\\BattleShips\\Network.cs",
               "RelativeDocumentMoniker": "BattleShips\\Network.cs",
@@ -96,7 +96,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "8_PlayForm.cs",
               "DocumentMoniker": "D:\\bantau\\BanTau\\Frontend\\BattleShips\\BattleShips\\8_PlayForm.cs",
               "RelativeDocumentMoniker": "BattleShips\\8_PlayForm.cs",
@@ -110,13 +110,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "8_PlayForm.Designer.cs",
               "DocumentMoniker": "D:\\bantau\\BanTau\\Frontend\\BattleShips\\BattleShips\\8_PlayForm.Designer.cs",
               "RelativeDocumentMoniker": "BattleShips\\8_PlayForm.Designer.cs",
               "ToolTip": "D:\\bantau\\BanTau\\Frontend\\BattleShips\\BattleShips\\8_PlayForm.Designer.cs",
               "RelativeToolTip": "BattleShips\\8_PlayForm.Designer.cs",
-              "ViewState": "AQIAAFQAAAAAAAAAAAAgwF8AAABAAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-01T17:05:13.488Z",
               "IsPinned": true,
@@ -140,14 +140,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "7_ShipDeployment.cs [Design]",
               "DocumentMoniker": "D:\\bantau\\BanTau\\Frontend\\BattleShips\\BattleShips\\7_ShipDeployment.cs",
               "RelativeDocumentMoniker": "BattleShips\\7_ShipDeployment.cs",
-              "ToolTip": "D:\\NT106-final\\BanTau\\Frontend\\BattleShips\\BattleShips\\7_ShipDeployment.cs [Design]",
-              "RelativeToolTip": "..\\..\\..\\..\\NT106-final\\BanTau\\Frontend\\BattleShips\\BattleShips\\7_ShipDeployment.cs [Design]",
+              "ToolTip": "D:\\bantau\\BanTau\\Frontend\\BattleShips\\BattleShips\\7_ShipDeployment.cs [Design]",
+              "RelativeToolTip": "BattleShips\\7_ShipDeployment.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T08:05:03.554Z"
+              "WhenOpened": "2024-11-02T08:05:03.554Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
@@ -271,7 +272,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "7_ShipDeployment.cs",
               "DocumentMoniker": "D:\\bantau\\BanTau\\Frontend\\BattleShips\\BattleShips\\7_ShipDeployment.cs",
               "RelativeDocumentMoniker": "BattleShips\\7_ShipDeployment.cs",
