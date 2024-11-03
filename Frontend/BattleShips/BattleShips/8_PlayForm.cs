@@ -280,16 +280,17 @@ namespace BattleShips
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Network.Instance.SendMsg(8, Game.me.roomID, Game.me.cName, textBox1.Text) ;
+            Network.Instance.SendMsg(8, Game.me.roomID, Game.me.cName, textBox1.Text);
+            textBox1.Clear();
         }
 
-        private delegate void SafeUpdateChat(string msg);
-        public void UpdateChat(string msg)
+        private delegate void SafeUpdateChat(string roomID, string msg);
+        public void UpdateChat(string roomID, string msg)
         {
             if (richTextBox1.InvokeRequired)
             {
                 var d = new SafeUpdateChat(UpdateChat);
-                richTextBox1.Invoke(d, new object[] { msg });
+                richTextBox1.Invoke(d, new object[] {roomID, msg });
             }
             else
             {

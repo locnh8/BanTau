@@ -154,21 +154,6 @@ namespace Battleships
                        });
                         roomWaiting.UpdateForm(2, roomID, "");
                     }
-
-                    /* create.SafeInvoke(() =>
-                     {
-                         if (roomWaiting == null || roomWaiting.IsDisposed)
-                         {
-                             roomWaiting = new RoomWaiting(roomID);
-                             roomWaiting.Show();
-                         }
-                         if (private_public != null)
-                         {
-                             private_public.Hide();
-                         }
-                         create.Hide();
-                     });*/
-                    ////roomWaiting.UpdateForm(1, roomID, otherPlayer);
                     Game.me.roomID = roomID;
                 }
 
@@ -242,7 +227,7 @@ namespace Battleships
                 {
                     string RoomID = msgPayload[1];
                     string Message = msgPayload[2];
-                    playform.UpdateChat(Message);
+                    playform.UpdateChat(RoomID, Message);
                 }
             }
             catch (Exception ex)

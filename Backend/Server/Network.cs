@@ -70,7 +70,7 @@ namespace Server
                         // Tạo phòng
                         else if (code == 1)
                         {
-                            string playerName= msgPayload[1];
+                            string playerName = msgPayload[1];
                             string roomID = msgPayload[2];
 
                             // Player left room
@@ -100,23 +100,6 @@ namespace Server
                                 Game.rooms.Add(roomID, room);
                             }
 
-                            // Player join room
-                            else
-                            {
-                                // Join room OK
-                                if (!Game.rooms[roomID].isFull)
-                                {
-                                    Game.rooms[roomID].AddPlayer(playerName, Game.currentUsers[playerName]);
-
-                                }
-                                // Room is full
-                                else
-                                {
-                                    sendMsg(1, playerName, "");
-                                    continue;
-                                }
-                            }
-
                             // Broadcast to all player in room
                             if (Game.rooms.ContainsKey(roomID))
                             {
@@ -125,6 +108,7 @@ namespace Server
                                     sendToRoom(1, roomID, playername);
                                 }
                             }
+                        
                         }
                         // Lấy thông tin bản đồ người chơi
                         else if (code == 2)
@@ -199,8 +183,32 @@ namespace Server
                             string player = msgPayload[2];
                             string message = player + ": " + msgPayload[3]; 
                             sendToRoom(8, roomID, message);
-                    }
-                    }
+                        }
+                        else if (code == 9)
+                        {
+                            string playerName = msgPayload[1];
+                            string roomID = msgPayload[2];
+                            if (!string.IsNullOrEmpty(roomID) && Game.rooms.ContainsKey(roomID))
+                            {
+                                if (!Game.rooms[roomID].isFull)
+                                {
+                                    Game.rooms[roomID].AddPlayer(playerName, Game.currentUsers[playerName]);
+                                }
+                                else
+                                {
+                                    sendMsg(1, playerName, "");
+                                }
+                                //Broadcast to all player in room
+                                if (Game.rooms.ContainsKey(roomID))
+                                {
+                                    foreach (string playername in Game.rooms[roomID].Players.Keys)
+                                    {
+                                        sendToRoom(1, roomID, playername);
+                                    }
+                                }
+                        }
+                        }
+                }
             }
             catch
             {
@@ -213,6 +221,12 @@ namespace Server
                 // Đảm bảo tài nguyên của client được giải phóng khi kết thúc kết nối
                 client.Close();
                 sr.Close();
+                if (Game.currentTCPs.ContainsValue(client))
+                {
+                    string username = Game.currentTCPs.FirstOrDefault(x => x.Value == client).Key;
+                    Game.currentTCPs.Remove(username);
+                    Game.currentUsers.Remove(username);
+                }
             }
         }
 

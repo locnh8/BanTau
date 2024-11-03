@@ -53,9 +53,9 @@
             pBoxShip1.BackColor = Color.Transparent;
             pBoxShip1.BackgroundImage = Properties.Resources.Ship1_OroJackson;
             pBoxShip1.BackgroundImageLayout = ImageLayout.Stretch;
-            pBoxShip1.Location = new Point(64, 36);
+            pBoxShip1.Location = new Point(57, 34);
             pBoxShip1.Name = "pBoxShip1";
-            pBoxShip1.Size = new Size(112, 52);
+            pBoxShip1.Size = new Size(100, 50);
             pBoxShip1.TabIndex = 0;
             pBoxShip1.TabStop = false;
             pBoxShip1.Click += pBoxShip1_Click;
@@ -64,9 +64,9 @@
             // 
             pBoxShip2.BackgroundImage = Properties.Resources.Ship2_merymery;
             pBoxShip2.BackgroundImageLayout = ImageLayout.Stretch;
-            pBoxShip2.Location = new Point(64, 94);
+            pBoxShip2.Location = new Point(57, 90);
             pBoxShip2.Name = "pBoxShip2";
-            pBoxShip2.Size = new Size(169, 52);
+            pBoxShip2.Size = new Size(150, 50);
             pBoxShip2.TabIndex = 1;
             pBoxShip2.TabStop = false;
             pBoxShip2.Click += pBoxShip2_Click;
@@ -75,9 +75,9 @@
             // 
             pBoxShip3.BackgroundImage = Properties.Resources.Ship3_Roger;
             pBoxShip3.BackgroundImageLayout = ImageLayout.Stretch;
-            pBoxShip3.Location = new Point(64, 153);
+            pBoxShip3.Location = new Point(57, 146);
             pBoxShip3.Name = "pBoxShip3";
-            pBoxShip3.Size = new Size(169, 52);
+            pBoxShip3.Size = new Size(150, 50);
             pBoxShip3.TabIndex = 2;
             pBoxShip3.TabStop = false;
             pBoxShip3.Click += pBoxShip3_Click;
@@ -86,9 +86,9 @@
             // 
             pBoxShip4.BackgroundImage = Properties.Resources.Ship4_thousandSunny;
             pBoxShip4.BackgroundImageLayout = ImageLayout.Stretch;
-            pBoxShip4.Location = new Point(64, 212);
+            pBoxShip4.Location = new Point(57, 202);
             pBoxShip4.Name = "pBoxShip4";
-            pBoxShip4.Size = new Size(225, 52);
+            pBoxShip4.Size = new Size(200, 50);
             pBoxShip4.TabIndex = 3;
             pBoxShip4.TabStop = false;
             pBoxShip4.Click += pBoxShip4_Click;
@@ -97,9 +97,9 @@
             // 
             pBoxShip5.BackgroundImage = Properties.Resources.Ship5_whireBear;
             pBoxShip5.BackgroundImageLayout = ImageLayout.Stretch;
-            pBoxShip5.Location = new Point(64, 271);
+            pBoxShip5.Location = new Point(57, 258);
             pBoxShip5.Name = "pBoxShip5";
-            pBoxShip5.Size = new Size(281, 52);
+            pBoxShip5.Size = new Size(250, 50);
             pBoxShip5.TabIndex = 4;
             pBoxShip5.TabStop = false;
             pBoxShip5.Click += pBoxShip5_Click;
@@ -128,7 +128,7 @@
             btnBackMenu.FlatStyle = FlatStyle.Flat;
             btnBackMenu.Location = new Point(0, 0);
             btnBackMenu.Name = "btnBackMenu";
-            btnBackMenu.Size = new Size(35, 29);
+            btnBackMenu.Size = new Size(31, 28);
             btnBackMenu.TabIndex = 9;
             btnBackMenu.UseVisualStyleBackColor = false;
             btnBackMenu.Click += btnBackMenu_Click;
@@ -142,9 +142,9 @@
             btnRolate.FlatAppearance.MouseDownBackColor = Color.Transparent;
             btnRolate.FlatAppearance.MouseOverBackColor = Color.Transparent;
             btnRolate.FlatStyle = FlatStyle.Flat;
-            btnRolate.Location = new Point(86, 336);
+            btnRolate.Location = new Point(76, 320);
             btnRolate.Name = "btnRolate";
-            btnRolate.Size = new Size(78, 68);
+            btnRolate.Size = new Size(69, 65);
             btnRolate.TabIndex = 1;
             btnRolate.UseVisualStyleBackColor = false;
             btnRolate.Click += btnRolate_Click;
@@ -159,9 +159,9 @@
             btnReady.FlatAppearance.MouseOverBackColor = Color.Transparent;
             btnReady.FlatStyle = FlatStyle.Flat;
             btnReady.Font = new Font("Algerian", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnReady.Location = new Point(240, 338);
+            btnReady.Location = new Point(213, 322);
             btnReady.Name = "btnReady";
-            btnReady.Size = new Size(106, 61);
+            btnReady.Size = new Size(94, 58);
             btnReady.TabIndex = 8;
             btnReady.Text = "Ready";
             btnReady.UseVisualStyleBackColor = false;
@@ -171,18 +171,18 @@
             // 
             flowLayoutPanel1.BackColor = Color.Transparent;
             flowLayoutPanel1.Controls.Add(pBoxDesk);
-            flowLayoutPanel1.Location = new Point(392, 0);
+            flowLayoutPanel1.Location = new Point(348, 0);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(512, 476);
+            flowLayoutPanel1.Size = new Size(455, 453);
             flowLayoutPanel1.TabIndex = 10;
             // 
             // ShipDeployment
             // 
-            AutoScaleDimensions = new SizeF(9F, 21F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.bantau;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(900, 472);
+            ClientSize = new Size(764, 422);
             Controls.Add(flowLayoutPanel1);
             Controls.Add(btnReady);
             Controls.Add(btnRolate);

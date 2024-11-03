@@ -36,7 +36,7 @@ namespace BattleShips
         private void button2_Click(object sender, EventArgs e)
         {
             string roomID = textBox1.Text.Trim();
-            Network.Instance.SendMsg(1, Game.me.cName, roomID);
+            Network.Instance.SendMsg(9, Game.me.cName, roomID);
         }
 
         public void SafeInvoke(Action action)

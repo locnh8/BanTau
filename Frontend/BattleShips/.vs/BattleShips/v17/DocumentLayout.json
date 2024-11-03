@@ -7,16 +7,28 @@
       "RelativeMoniker": "D:0:0:{B693055A-8CFD-4E74-A30A-A2948801A809}|BattleShips\\BattleShips.csproj|solutionrelative:battleships\\network.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B693055A-8CFD-4E74-A30A-A2948801A809}|BattleShips\\BattleShips.csproj|d:\\nt106-final\\bantau\\frontend\\battleships\\battleships\\8_playform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B693055A-8CFD-4E74-A30A-A2948801A809}|BattleShips\\BattleShips.csproj|solutionrelative:battleships\\8_playform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B693055A-8CFD-4E74-A30A-A2948801A809}|BattleShips\\BattleShips.csproj|D:\\NT106-final\\BanTau\\Frontend\\BattleShips\\battleships\\8_playform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B693055A-8CFD-4E74-A30A-A2948801A809}|BattleShips\\BattleShips.csproj|solutionrelative:battleships\\8_playform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{B693055A-8CFD-4E74-A30A-A2948801A809}|BattleShips\\BattleShips.csproj|D:\\NT106-final\\BanTau\\Frontend\\BattleShips\\battleships\\4_createroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B693055A-8CFD-4E74-A30A-A2948801A809}|BattleShips\\BattleShips.csproj|solutionrelative:battleships\\4_createroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B693055A-8CFD-4E74-A30A-A2948801A809}|BattleShips\\BattleShips.csproj|D:\\NT106-final\\BanTau\\Frontend\\BattleShips\\battleships\\5_private_public.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B693055A-8CFD-4E74-A30A-A2948801A809}|BattleShips\\BattleShips.csproj|solutionrelative:battleships\\5_private_public.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B693055A-8CFD-4E74-A30A-A2948801A809}|BattleShips\\BattleShips.csproj|D:\\NT106-final\\BanTau\\Frontend\\BattleShips\\battleships\\4_createroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B693055A-8CFD-4E74-A30A-A2948801A809}|BattleShips\\BattleShips.csproj|solutionrelative:battleships\\4_createroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B693055A-8CFD-4E74-A30A-A2948801A809}|BattleShips\\BattleShips.csproj|D:\\NT106-final\\BanTau\\Frontend\\BattleShips\\battleships\\8_playform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B693055A-8CFD-4E74-A30A-A2948801A809}|BattleShips\\BattleShips.csproj|solutionrelative:battleships\\8_playform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B693055A-8CFD-4E74-A30A-A2948801A809}|BattleShips\\BattleShips.csproj|d:\\nt106-final\\bantau\\frontend\\battleships\\battleships\\8_playform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B693055A-8CFD-4E74-A30A-A2948801A809}|BattleShips\\BattleShips.csproj|solutionrelative:battleships\\8_playform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B693055A-8CFD-4E74-A30A-A2948801A809}|BattleShips\\BattleShips.csproj|D:\\NT106-final\\BanTau\\Frontend\\BattleShips\\battleships\\7_shipdeployment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -33,14 +45,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{B693055A-8CFD-4E74-A30A-A2948801A809}|BattleShips\\BattleShips.csproj|D:\\NT106-final\\BanTau\\Frontend\\BattleShips\\battleships\\5_private_public.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B693055A-8CFD-4E74-A30A-A2948801A809}|BattleShips\\BattleShips.csproj|solutionrelative:battleships\\5_private_public.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B693055A-8CFD-4E74-A30A-A2948801A809}|BattleShips\\BattleShips.csproj|D:\\NT106-final\\BanTau\\Frontend\\BattleShips\\battleships\\5_private_public.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B693055A-8CFD-4E74-A30A-A2948801A809}|BattleShips\\BattleShips.csproj|solutionrelative:battleships\\5_private_public.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B693055A-8CFD-4E74-A30A-A2948801A809}|BattleShips\\BattleShips.csproj|D:\\NT106-final\\BanTau\\Frontend\\BattleShips\\battleships\\4_createroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B693055A-8CFD-4E74-A30A-A2948801A809}|BattleShips\\BattleShips.csproj|solutionrelative:battleships\\4_createroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B693055A-8CFD-4E74-A30A-A2948801A809}|BattleShips\\BattleShips.csproj|D:\\NT106-final\\BanTau\\Frontend\\BattleShips\\battleships\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -89,10 +93,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{B693055A-8CFD-4E74-A30A-A2948801A809}|BattleShips\\BattleShips.csproj|D:\\NT106-final\\BanTau\\Frontend\\BattleShips\\battleships\\2_namingform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B693055A-8CFD-4E74-A30A-A2948801A809}|BattleShips\\BattleShips.csproj|solutionrelative:battleships\\2_namingform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B693055A-8CFD-4E74-A30A-A2948801A809}|BattleShips\\BattleShips.csproj|D:\\NT106-final\\BanTau\\Frontend\\BattleShips\\battleships\\4_createroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B693055A-8CFD-4E74-A30A-A2948801A809}|BattleShips\\BattleShips.csproj|solutionrelative:battleships\\4_createroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -112,7 +112,7 @@
               "RelativeDocumentMoniker": "BattleShips\\Network.cs",
               "ToolTip": "D:\\NT106-final\\BanTau\\Frontend\\BattleShips\\BattleShips\\Network.cs",
               "RelativeToolTip": "BattleShips\\Network.cs",
-              "ViewState": "AQIAAOQAAAAAAAAAAAAowOsAAAAiAAAA",
+              "ViewState": "AQIAAG8AAAAAAAAAAAAswIsAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-06T07:09:38.151Z",
               "IsPinned": true,
@@ -120,13 +120,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "8_PlayForm.cs",
               "DocumentMoniker": "D:\\NT106-final\\BanTau\\Frontend\\BattleShips\\BattleShips\\8_PlayForm.cs",
               "RelativeDocumentMoniker": "BattleShips\\8_PlayForm.cs",
               "ToolTip": "D:\\NT106-final\\BanTau\\Frontend\\BattleShips\\BattleShips\\8_PlayForm.cs",
               "RelativeToolTip": "BattleShips\\8_PlayForm.cs",
-              "ViewState": "AQIAABUBAAAAAAAAAAAuwBgBAAAaAAAA",
+              "ViewState": "AQIAAK8AAAAAAAAAAAAiwBsBAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-08T03:28:13.832Z",
               "IsPinned": true,
@@ -134,7 +134,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "8_PlayForm.Designer.cs",
               "DocumentMoniker": "D:\\NT106-final\\BanTau\\Frontend\\BattleShips\\BattleShips\\8_PlayForm.Designer.cs",
               "RelativeDocumentMoniker": "BattleShips\\8_PlayForm.Designer.cs",
@@ -149,84 +149,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "5_Private_Public.cs [Design]",
-              "DocumentMoniker": "D:\\NT106-final\\BanTau\\Frontend\\BattleShips\\BattleShips\\5_Private_Public.cs",
-              "RelativeDocumentMoniker": "BattleShips\\5_Private_Public.cs",
-              "ToolTip": "D:\\bantau\\BanTau\\Frontend\\BattleShips\\BattleShips\\5_Private_Public.cs [Design]",
-              "RelativeToolTip": "..\\..\\..\\..\\bantau\\BanTau\\Frontend\\BattleShips\\BattleShips\\5_Private_Public.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-03T05:46:44.253Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "3_GuideForm.cs [Design]",
-              "DocumentMoniker": "D:\\NT106-final\\BanTau\\Frontend\\BattleShips\\BattleShips\\3_GuideForm.cs",
-              "RelativeDocumentMoniker": "BattleShips\\3_GuideForm.cs",
-              "ToolTip": "D:\\bantau\\BanTau\\Frontend\\BattleShips\\BattleShips\\3_GuideForm.cs [Design]",
-              "RelativeToolTip": "..\\..\\..\\..\\bantau\\BanTau\\Frontend\\BattleShips\\BattleShips\\3_GuideForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-03T05:38:08.932Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "8_PlayForm.cs [Design]",
-              "DocumentMoniker": "D:\\NT106-final\\BanTau\\Frontend\\BattleShips\\BattleShips\\8_PlayForm.cs",
-              "RelativeDocumentMoniker": "BattleShips\\8_PlayForm.cs",
-              "ToolTip": "D:\\NT106-final\\BanTau\\Frontend\\BattleShips\\BattleShips\\8_PlayForm.cs [Design]",
-              "RelativeToolTip": "BattleShips\\8_PlayForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T07:44:46.774Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "6_RoomWaiting.cs [Design]",
-              "DocumentMoniker": "D:\\NT106-final\\BanTau\\Frontend\\BattleShips\\BattleShips\\6_RoomWaiting.cs",
-              "RelativeDocumentMoniker": "BattleShips\\6_RoomWaiting.cs",
-              "ToolTip": "D:\\bantau\\BanTau\\Frontend\\BattleShips\\BattleShips\\6_RoomWaiting.cs [Design]",
-              "RelativeToolTip": "..\\..\\..\\..\\bantau\\BanTau\\Frontend\\BattleShips\\BattleShips\\6_RoomWaiting.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-03T05:53:38.343Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "2_NamingForm.cs [Design]",
-              "DocumentMoniker": "D:\\NT106-final\\BanTau\\Frontend\\BattleShips\\BattleShips\\2_NamingForm.cs",
-              "RelativeDocumentMoniker": "BattleShips\\2_NamingForm.cs",
-              "ToolTip": "D:\\bantau\\BanTau\\Frontend\\BattleShips\\BattleShips\\2_NamingForm.cs [Design]",
-              "RelativeToolTip": "..\\..\\..\\..\\bantau\\BanTau\\Frontend\\BattleShips\\BattleShips\\2_NamingForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-03T05:28:15.252Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "BattleShips",
-              "DocumentMoniker": "D:\\NT106-final\\BanTau\\Frontend\\BattleShips\\BattleShips\\BattleShips.csproj",
-              "RelativeDocumentMoniker": "BattleShips\\BattleShips.csproj",
-              "ToolTip": "D:\\NT106-final\\BanTau\\Frontend\\BattleShips\\BattleShips\\BattleShips.csproj",
-              "RelativeToolTip": "BattleShips\\BattleShips.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-11-03T05:04:49.097Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "1_MenuForm.cs [Design]",
-              "DocumentMoniker": "D:\\NT106-final\\BanTau\\Frontend\\BattleShips\\BattleShips\\1_MenuForm.cs",
-              "RelativeDocumentMoniker": "BattleShips\\1_MenuForm.cs",
-              "ToolTip": "D:\\bantau\\BanTau\\Frontend\\BattleShips\\BattleShips\\1_MenuForm.cs [Design]",
-              "RelativeToolTip": "..\\..\\..\\..\\bantau\\BanTau\\Frontend\\BattleShips\\BattleShips\\1_MenuForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-03T05:03:18.583Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "7_ShipDeployment.cs [Design]",
               "DocumentMoniker": "D:\\NT106-final\\BanTau\\Frontend\\BattleShips\\BattleShips\\7_ShipDeployment.cs",
               "RelativeDocumentMoniker": "BattleShips\\7_ShipDeployment.cs",
@@ -238,7 +160,124 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "4_CreateRoom.cs",
+              "DocumentMoniker": "D:\\NT106-final\\BanTau\\Frontend\\BattleShips\\BattleShips\\4_CreateRoom.cs",
+              "RelativeDocumentMoniker": "BattleShips\\4_CreateRoom.cs",
+              "ToolTip": "D:\\NT106-final\\BanTau\\Frontend\\BattleShips\\BattleShips\\4_CreateRoom.cs",
+              "RelativeToolTip": "BattleShips\\4_CreateRoom.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAA1wCgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T15:54:09.566Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "5_Private_Public.cs",
+              "DocumentMoniker": "D:\\NT106-final\\BanTau\\Frontend\\BattleShips\\BattleShips\\5_Private_Public.cs",
+              "RelativeDocumentMoniker": "BattleShips\\5_Private_Public.cs",
+              "ToolTip": "D:\\NT106-final\\BanTau\\Frontend\\BattleShips\\BattleShips\\5_Private_Public.cs",
+              "RelativeToolTip": "BattleShips\\5_Private_Public.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAYwDEAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T11:43:06.874Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "4_CreateRoom.cs [Design]",
+              "DocumentMoniker": "D:\\NT106-final\\BanTau\\Frontend\\BattleShips\\BattleShips\\4_CreateRoom.cs",
+              "RelativeDocumentMoniker": "BattleShips\\4_CreateRoom.cs",
+              "ToolTip": "D:\\NT106-final\\BanTau\\Frontend\\BattleShips\\BattleShips\\4_CreateRoom.cs [Design]",
+              "RelativeToolTip": "BattleShips\\4_CreateRoom.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T15:54:07.621Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "6_RoomWaiting.cs [Design]",
+              "DocumentMoniker": "D:\\NT106-final\\BanTau\\Frontend\\BattleShips\\BattleShips\\6_RoomWaiting.cs",
+              "RelativeDocumentMoniker": "BattleShips\\6_RoomWaiting.cs",
+              "ToolTip": "D:\\bantau\\BanTau\\Frontend\\BattleShips\\BattleShips\\6_RoomWaiting.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\..\\bantau\\BanTau\\Frontend\\BattleShips\\BattleShips\\6_RoomWaiting.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-03T05:53:38.343Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "8_PlayForm.cs [Design]",
+              "DocumentMoniker": "D:\\NT106-final\\BanTau\\Frontend\\BattleShips\\BattleShips\\8_PlayForm.cs",
+              "RelativeDocumentMoniker": "BattleShips\\8_PlayForm.cs",
+              "ToolTip": "D:\\NT106-final\\BanTau\\Frontend\\BattleShips\\BattleShips\\8_PlayForm.cs [Design]",
+              "RelativeToolTip": "BattleShips\\8_PlayForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-02T07:44:46.774Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "3_GuideForm.cs [Design]",
+              "DocumentMoniker": "D:\\NT106-final\\BanTau\\Frontend\\BattleShips\\BattleShips\\3_GuideForm.cs",
+              "RelativeDocumentMoniker": "BattleShips\\3_GuideForm.cs",
+              "ToolTip": "D:\\bantau\\BanTau\\Frontend\\BattleShips\\BattleShips\\3_GuideForm.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\..\\bantau\\BanTau\\Frontend\\BattleShips\\BattleShips\\3_GuideForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-03T05:38:08.932Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "5_Private_Public.cs [Design]",
+              "DocumentMoniker": "D:\\NT106-final\\BanTau\\Frontend\\BattleShips\\BattleShips\\5_Private_Public.cs",
+              "RelativeDocumentMoniker": "BattleShips\\5_Private_Public.cs",
+              "ToolTip": "D:\\NT106-final\\BanTau\\Frontend\\BattleShips\\BattleShips\\5_Private_Public.cs [Design]",
+              "RelativeToolTip": "BattleShips\\5_Private_Public.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-03T05:46:44.253Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "2_NamingForm.cs [Design]",
+              "DocumentMoniker": "D:\\NT106-final\\BanTau\\Frontend\\BattleShips\\BattleShips\\2_NamingForm.cs",
+              "RelativeDocumentMoniker": "BattleShips\\2_NamingForm.cs",
+              "ToolTip": "D:\\bantau\\BanTau\\Frontend\\BattleShips\\BattleShips\\2_NamingForm.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\..\\bantau\\BanTau\\Frontend\\BattleShips\\BattleShips\\2_NamingForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-03T05:28:15.252Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 15,
+              "Title": "BattleShips",
+              "DocumentMoniker": "D:\\NT106-final\\BanTau\\Frontend\\BattleShips\\BattleShips\\BattleShips.csproj",
+              "RelativeDocumentMoniker": "BattleShips\\BattleShips.csproj",
+              "ToolTip": "D:\\NT106-final\\BanTau\\Frontend\\BattleShips\\BattleShips\\BattleShips.csproj",
+              "RelativeToolTip": "BattleShips\\BattleShips.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-03T05:04:49.097Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "1_MenuForm.cs [Design]",
+              "DocumentMoniker": "D:\\NT106-final\\BanTau\\Frontend\\BattleShips\\BattleShips\\1_MenuForm.cs",
+              "RelativeDocumentMoniker": "BattleShips\\1_MenuForm.cs",
+              "ToolTip": "D:\\bantau\\BanTau\\Frontend\\BattleShips\\BattleShips\\1_MenuForm.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\..\\bantau\\BanTau\\Frontend\\BattleShips\\BattleShips\\1_MenuForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-03T05:03:18.583Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "1_MenuForm.cs",
               "DocumentMoniker": "D:\\NT106-final\\BanTau\\Frontend\\BattleShips\\BattleShips\\1_MenuForm.cs",
               "RelativeDocumentMoniker": "BattleShips\\1_MenuForm.cs",
@@ -250,7 +289,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "Player.cs",
               "DocumentMoniker": "D:\\NT106-final\\BanTau\\Frontend\\BattleShips\\BattleShips\\Player.cs",
               "RelativeDocumentMoniker": "BattleShips\\Player.cs",
@@ -262,7 +301,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "6_RoomWaiting.cs",
               "DocumentMoniker": "D:\\NT106-final\\BanTau\\Frontend\\BattleShips\\BattleShips\\6_RoomWaiting.cs",
               "RelativeDocumentMoniker": "BattleShips\\6_RoomWaiting.cs",
@@ -274,31 +313,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "5_Private_Public.cs",
-              "DocumentMoniker": "D:\\NT106-final\\BanTau\\Frontend\\BattleShips\\BattleShips\\5_Private_Public.cs",
-              "RelativeDocumentMoniker": "BattleShips\\5_Private_Public.cs",
-              "ToolTip": "D:\\NT106-final\\BanTau\\Frontend\\BattleShips\\BattleShips\\5_Private_Public.cs",
-              "RelativeToolTip": "BattleShips\\5_Private_Public.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAYwDgAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T11:43:06.874Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "4_CreateRoom.cs",
-              "DocumentMoniker": "D:\\NT106-final\\BanTau\\Frontend\\BattleShips\\BattleShips\\4_CreateRoom.cs",
-              "RelativeDocumentMoniker": "BattleShips\\4_CreateRoom.cs",
-              "ToolTip": "D:\\NT106-final\\BanTau\\Frontend\\BattleShips\\BattleShips\\4_CreateRoom.cs",
-              "RelativeToolTip": "BattleShips\\4_CreateRoom.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-07T15:54:09.566Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\NT106-final\\BanTau\\Frontend\\BattleShips\\BattleShips\\Program.cs",
               "RelativeDocumentMoniker": "BattleShips\\Program.cs",
@@ -310,7 +325,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "2_NamingForm.cs",
               "DocumentMoniker": "D:\\NT106-final\\BanTau\\Frontend\\BattleShips\\BattleShips\\2_NamingForm.cs",
               "RelativeDocumentMoniker": "BattleShips\\2_NamingForm.cs",
@@ -322,7 +337,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Game.cs",
               "DocumentMoniker": "D:\\NT106-final\\BanTau\\Frontend\\BattleShips\\BattleShips\\Game.cs",
               "RelativeDocumentMoniker": "BattleShips\\Game.cs",
@@ -334,18 +349,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "4_CreateRoom.cs [Design]",
-              "DocumentMoniker": "D:\\NT106-final\\BanTau\\Frontend\\BattleShips\\BattleShips\\4_CreateRoom.cs",
-              "RelativeDocumentMoniker": "BattleShips\\4_CreateRoom.cs",
-              "ToolTip": "D:\\bantau\\BanTau\\Frontend\\BattleShips\\BattleShips\\4_CreateRoom.cs [Design]",
-              "RelativeToolTip": "..\\..\\..\\..\\bantau\\BanTau\\Frontend\\BattleShips\\BattleShips\\4_CreateRoom.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-07T15:54:07.621Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "Graphics.cs",
               "DocumentMoniker": "D:\\NT106-final\\BanTau\\Frontend\\BattleShips\\BattleShips\\Graphics.cs",
               "RelativeDocumentMoniker": "BattleShips\\Graphics.cs",
@@ -357,7 +361,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "7_ShipDeployment.cs",
               "DocumentMoniker": "D:\\NT106-final\\BanTau\\Frontend\\BattleShips\\BattleShips\\7_ShipDeployment.cs",
               "RelativeDocumentMoniker": "BattleShips\\7_ShipDeployment.cs",
@@ -370,7 +374,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "Ship.cs",
               "DocumentMoniker": "D:\\NT106-final\\BanTau\\Frontend\\BattleShips\\BattleShips\\Ship.cs",
               "RelativeDocumentMoniker": "BattleShips\\Ship.cs",
