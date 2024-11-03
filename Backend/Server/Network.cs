@@ -1,7 +1,9 @@
 ﻿using Microsoft.VisualBasic.ApplicationServices;
 using System.Net;
 using System.Net.Sockets;
+using System.Runtime.Serialization.Formatters.Binary;
 using System.Text.Json;
+using System.Text.Json.Serialization;
 
 namespace Server
 {
@@ -149,31 +151,19 @@ namespace Server
                             Game.rooms[roomID].ChangePlayerTurn(attacker, shipLength);
                             sendToRoom(2, roomID, Game.rooms[roomID].CurrentTurn);
 
-                            /*// one of the two players won 
+                            // one of the two players won 
                             if (Game.IsEndGame(roomID, attacker))
                             {
-                                sendToRoom(4, roomID, attacker);
-                            }*/
+                                sendToRoom(7, roomID, attacker);
+                            }
                         }
                         // Trạng thái người chơi trong phòng chờ
                         else if (code == 4)
                         {
-/*                            string playerName= msgPayload[1];*/
                             string roomID = msgPayload[1];
                             Room room = Game.rooms[roomID];
 
                         sendToRoom(4, roomID);
-/*                            int index = room.Players.Keys.ToList().IndexOf(playerName);
-                            room.isPlaying[index] = true;*/
-
-                           /* if (!room.isPlaying.Contains(false))
-                            {
-                                sendToRoom(4, roomID, "1"); // Gửi thông báo tới phòng rằng tất cả đã sẵn sàng
-                            }
-                            else
-                            {
-                                sendToRoom(4, roomID, "0");
-                            }*/
                         }
                         // Người chơi rời phòng
                         else if (code == 5)
@@ -188,19 +178,6 @@ namespace Server
                                     sendMsg(5, player, roomID);
                                 }
                             }
-
-                            //Room room = Game.rooms[roomID];
-                            //room.RemovePlayer(playerID);
-                            //Console.WriteLine($"Player {playerID} đã rời phòng {roomID}.");
-                            //if (room.Players.Count == 0)
-                            //{
-                            //    Game.rooms.Remove(roomID);
-                            //    Console.WriteLine($"Phòng {roomID} đã bị xóa vì không còn người chơi.");
-                            //}
-                            //else
-                            //{
-                            //    sendToRoom(5, roomID, $"{Game.currentUsers[playerID].UserName} đã rời phòng.");
-                            //}
                         }
                         else if (code == 6)
                         {
@@ -213,7 +190,6 @@ namespace Server
 
                             if (!room.isPlaying.Contains(false))
                             {
-                                //
                                 sendToRoom(6, roomID);
                             }
                         }
@@ -284,23 +260,55 @@ namespace Server
             }
         }
 
-        private void getPlayer(string playerID, string roomID)
+        private void getPlayer(string username, string roomID)
         {
             try
             {
-                StreamReader sr = new StreamReader(Game.currentTCPs[playerID].GetStream());
-                string json = sr.ReadLine();
-                int[,] playerShipSet = JsonSerializer.Deserialize<int[,]>(json);
+                // Lấy luồng mạng từ TCP Client
+                NetworkStream ns = Game.currentTCPs[username].GetStream();
 
-                Player player = Game.currentUsers[playerID];
-                player.SetShipSet(playerShipSet);
+                // Đọc kích thước dữ liệu binary
+                byte[] sizeBuffer = new byte[sizeof(int)];
+                ns.Read(sizeBuffer, 0, sizeBuffer.Length);
+                int dataSize = BitConverter.ToInt32(sizeBuffer, 0);
 
-                Room room = Game.rooms[roomID];
-                room.AddPlayer(playerID, player);
+                // Đọc dữ liệu binary từ luồng
+                byte[] dataBuffer = new byte[dataSize];
+                ns.Read(dataBuffer, 0, dataBuffer.Length);
+
+                // Giải mã dữ liệu binary thành `int[,]`
+                using (MemoryStream ms = new MemoryStream(dataBuffer))
+                {
+                    using (BinaryReader reader = new BinaryReader(ms))
+                    {
+                        // Đọc số hàng và số cột của mảng
+                        int rows = reader.ReadInt32();
+                        int cols = reader.ReadInt32();
+
+                        // Khởi tạo mảng hai chiều `playerShipSet`
+                        int[,] playerShipSet = new int[rows, cols];
+
+                        // Đọc từng phần tử của mảng
+                        for (int i = 0; i < rows; i++)
+                        {
+                            for (int j = 0; j < cols; j++)
+                            {
+                                playerShipSet[i, j] = reader.ReadInt32();
+                            }
+                        }
+
+                        // Lưu mảng vào đối tượng `Player` và `Room`
+                        Player player = Game.currentUsers[username];
+                        player.SetShipSet(playerShipSet);
+
+                        Room room = Game.rooms[roomID];
+                        room.AddPlayer(username, player);
+                    }
+                }
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Error getting player information for {playerID}: {ex.Message}");
+                Console.WriteLine($"Error getting player information for {username}: {ex.Message}");
             }
         }
     }

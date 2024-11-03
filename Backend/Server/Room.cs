@@ -16,8 +16,7 @@
         {
             this.RoomID = id;
             this.Players = new Dictionary<string, Player>();
-            AddPlayer(userName, new Player(userName)); // Thêm người chơi vào phòng
-
+            Players.Add(userName, new Player(userName)); // Thêm người chơi vào phòng
             isPlaying = new List<bool> { false, false }; // Trạng thái chơi ban đầu
             CurrentTurn = userName; // Người chơi đầu tiên là người tạo phòng
         }
@@ -30,7 +29,12 @@
             }
             else
             {
-                Players.Add(playerName, player); // Thêm người chơi mới
+                Players.Add(playerName, new  Player(playerName)); // Thêm người chơi mới
+            }
+
+            if (Players.Count == 2)
+            {
+                isFull = true; // Phòng đã đủ người chơi
             }
         }
 
@@ -40,6 +44,7 @@
             {
                 Players.Remove(playerName); // Xóa người chơi
             }
+            isFull = false;
         }
 
         public void ChangePlayerTurn(string lastTurn, int hit)
@@ -47,12 +52,11 @@
             // Nếu không có cú đánh, chuyển lượt cho người khác
             if (hit == -1)
             {
-                foreach (var playerName in Players.Keys)
+                foreach (string playerName in Players.Keys)
                 {
                     if (playerName != lastTurn)
                     {
                         CurrentTurn = playerName; // Chuyển lượt cho người chơi còn lại
-                        break; // Ra khỏi vòng lặp sau khi tìm thấy người chơi tiếp theo
                     }
                 }
             }

@@ -26,7 +26,7 @@ namespace Battleships
         public static PlayForm playform = null;
         public static Private_Public private_public = null;
         public static ShipDeployment DeployShip = null;
-        public static CreateRoom  create= null;
+        public static CreateRoom create = null;
 
 
         private Network()
@@ -203,16 +203,16 @@ namespace Battleships
                     /*if (flag == "1")
                     {
                         // Cả hai người chơi đã sẵn sàng, chuyển sang form đặt thuyền*/
-                        MessageBox.Show("Cả phòng đã sẵn sàng. Bắt đầu đặt thuyền!");
-                        create.SafeInvoke(() =>
+                    MessageBox.Show("Cả phòng đã sẵn sàng. Bắt đầu đặt thuyền!");
+                    create.SafeInvoke(() =>
+                    {
+                        if (DeployShip == null || DeployShip.IsDisposed)
                         {
-                            if (DeployShip == null || DeployShip.IsDisposed)
-                            {
-                                DeployShip = new ShipDeployment();
-                                DeployShip.Show();
-                                roomWaiting.Hide();
-                            }
-                        });
+                            DeployShip = new ShipDeployment();
+                            DeployShip.Show();
+                            roomWaiting.Hide();
+                        }
+                    });
                     /*}
                     else
                     {
@@ -233,7 +233,12 @@ namespace Battleships
                 {
                     DeployShip.startGame(DeployShip);
                 }
-           }
+                else if(code == 7)
+                {
+                    string playerWin = msgPayload[2];
+                    playform.PerformWin(playerWin, playform);
+                }
+            }
             catch (Exception ex)
             {
                 MessageBox.Show("Error receiving message: " + ex.Message);
@@ -265,36 +270,37 @@ namespace Battleships
             // Gửi thông điệp ban đầu
             SendMsg(2, Game.me.cName, roomID);
 
-            // Chuyển đổi `player.ShipSet` sang chuỗi JSON
-            int[][] jaggedArray = ConvertToJaggedArray(player.ShipSet);
-            string jsonData = JsonSerializer.Serialize(jaggedArray);
+            // Lấy luồng mạng từ TCP Client
+            NetworkStream ns = tcpClient.GetStream();
 
-            // Chuyển chuỗi JSON thành mảng byte
-            byte[] jsonBytes = Encoding.UTF8.GetBytes(jsonData);
-
-            // Gửi kích thước của dữ liệu JSON trước
-            tcpClient.GetStream().Write(BitConverter.GetBytes(jsonBytes.Length), 0, sizeof(int));
-
-            // Gửi dữ liệu JSON qua stream
-            tcpClient.GetStream().Write(jsonBytes, 0, jsonBytes.Length);
-        }
-
-        // Phương thức chuyển đổi từ int[,] sang int[][]
-        public static int[][] ConvertToJaggedArray(int[,] array)
-        {
-            int rows = array.GetLength(0);
-            int cols = array.GetLength(1);
-            int[][] jaggedArray = new int[rows][];
-
-            for (int i = 0; i < rows; i++)
+            using (MemoryStream ms = new MemoryStream())
             {
-                jaggedArray[i] = new int[cols];
-                for (int j = 0; j < cols; j++)
+                using (BinaryWriter writer = new BinaryWriter(ms))
                 {
-                    jaggedArray[i][j] = array[i, j];
+                    int[,] shipSet = player.ShipSet;
+
+                    // Ghi kích thước của mảng hai chiều
+                    writer.Write(shipSet.GetLength(0));  // Số hàng
+                    writer.Write(shipSet.GetLength(1));  // Số cột
+
+                    // Ghi từng phần tử trong mảng `int[,]`
+                    for (int i = 0; i < shipSet.GetLength(0); i++)
+                    {
+                        for (int j = 0; j < shipSet.GetLength(1); j++)
+                        {
+                            writer.Write(shipSet[i, j]);
+                        }
+                    }
                 }
+
+                // Gửi kích thước của dữ liệu trước
+                byte[] dataBuffer = ms.ToArray();
+                byte[] sizeBuffer = BitConverter.GetBytes(dataBuffer.Length);
+                ns.Write(sizeBuffer, 0, sizeBuffer.Length);
+
+                // Gửi dữ liệu nhị phân
+                ns.Write(dataBuffer, 0, dataBuffer.Length);
             }
-            return jaggedArray;
         }
     }
 }

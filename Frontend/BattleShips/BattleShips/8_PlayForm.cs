@@ -24,30 +24,13 @@ namespace BattleShips
         {
             InitializeComponent();
             CenterToScreen();
-            lbMyName.Text = Game.me.cName;
-            lbEnemyName.Text = Game.player.cName;
+            Network.playform = this;
+            meLabel.Text = Game.me.cName;
+            playerLabel.Text = Game.player.cName;
         }
 
 
-        private void btnExit_Click(object sender, EventArgs e)
-        {
-            if (MessageBox.Show("You will lose the game and return to the main menu. Are you sure?", "Surrender and Exit?", MessageBoxButtons.OK, MessageBoxIcon.Question) == DialogResult.OK)
-            {
-                if (!isEndGame)
-                {
-                    // send code 7
-                    Network.Instance.SendMsg(7, Game.me.roomID, Game.me.cName);
-                }
-
-                this.Hide();
-                this.Dispose();
-
-                Network.DeployShip.Dispose();
-                Network.create.Show();
-            }
-        }
-
-        private void pBoxDeskEnemy_MouseMove(object sender, MouseEventArgs e)
+        private void pictureBox1_MouseMove(object sender, MouseEventArgs e)
         {
             if (!Game.me.isMyTurn)
             {
@@ -64,21 +47,21 @@ namespace BattleShips
                     mouseCellX = GraphicContext.GetCell(CoorX);
                     mouseCellY = GraphicContext.GetCell(CoorY);
 
-                    pBoxDeskEnemy.Refresh();
+                    pictureBox1.Refresh();
 
                     if (mouseCellX < Game.mapSize && mouseCellY < Game.mapSize && Game.CanAttackAt(mouseCellX, mouseCellY))
                     {
-                        GraphicContext.DrawScope(mouseCellX, mouseCellY, pBoxDeskEnemy);
+                        GraphicContext.DrawScope(mouseCellX, mouseCellY, pictureBox1);
                     }
                 }
             }
             else
             {
-                pBoxDeskEnemy.Refresh();
+                pictureBox1.Refresh();
             }
         }
 
-        private void pBoxDeskEnemy_Click(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
             if (!Game.me.isMyTurn)
             {
@@ -93,9 +76,10 @@ namespace BattleShips
                     Game.me.isMyTurn = false;
                 }
 
-                pBoxDeskEnemy.Refresh();
+                pictureBox1.Refresh();
             }
         }
+
         public void PerformAttacked(string attackedFrom, int x, int y, int shipSet)
         {
             if (attackedFrom == Game.me.cName)
@@ -119,13 +103,34 @@ namespace BattleShips
                 }
             }
 
-            UpdateDesk(pBoxDeskEnemy);
-            UpdateDesk(pBoxDeskMe);
+            UpdateDesk(pictureBox1);
+            UpdateDesk(pictureBox2);
             UpdateProgress(meProgress);
-            UpdateProgress(enemyprogress);
+            UpdateProgress(playerProgress);
+        }
+        private void PlayForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Environment.Exit(0);
+        }
+
+        private void pictureBox1_Paint(object sender, PaintEventArgs e)
+        {
+            GraphicContext.DrawSunkenShips(Game.player.ShipSet, Game.player.ShipLeftCells, e);
+
+            if (Game.player != null)
+            {
+                GraphicContext.DrawDeckStatus(Game.player.RevealedCells, Game.player.ShipSet, e);
+            }
+        }
+
+        private void pictureBox2_Paint(object sender, PaintEventArgs e)
+        {
+            GraphicContext.DrawShipSet(Game.me, e);
+            GraphicContext.DrawDeckStatus(Game.me.RevealedCells, Game.me.ShipSet, e);
         }
 
         private delegate void SafeUpdateDesk(PictureBox picture);
+
         private void UpdateDesk(PictureBox picture)
         {
             if (picture.InvokeRequired)
@@ -138,6 +143,7 @@ namespace BattleShips
                 picture.Refresh();
             }
         }
+
         private delegate void SafeUpdateProgress(ProgressBar pg);
         private void UpdateProgress(ProgressBar pg)
         {
@@ -152,33 +158,17 @@ namespace BattleShips
             }
         }
 
-        private void pBoxDeskMe_Paint(object sender, PaintEventArgs e)
-        {
-            GraphicContext.DrawShipSet(Game.me, e);
-            GraphicContext.DrawDeckStatus(Game.me.RevealedCells, Game.me.ShipSet, e);
-        }
-
-        private void pBoxDeskEnemy_Paint(object sender, PaintEventArgs e)
-        {
-            GraphicContext.DrawSunkenShips(Game.player.ShipSet, Game.player.ShipLeftCells, e);
-
-            if (Game.player != null)
-            {
-                GraphicContext.DrawDeckStatus(Game.player.RevealedCells, Game.player.ShipSet, e);
-            }
-        }
-
         private void PlayForm_Load(object sender, EventArgs e)
         {
-            lbMyName.Location = new Point(pBoxMe.Location.X + pBoxMe.Width + 6, pBoxMe.Location.Y + 12);
-            lbEnemyName.Location = new Point(pBoxEnemy.Location.X - pBoxEnemy.Width - 6, pBoxMe.Location.Y + 12);
+            meLabel.Location = new Point(mePBox.Location.X + mePBox.Width + 6, mePBox.Location.Y + 12);
+            playerLabel.Location = new Point(playerPBox.Location.X - playerLabel.Width - 6, mePBox.Location.Y + 12);
 
             afkTimer.Start();
 
             this.CenterToParent();
         }
 
-        private void afkTimer_Tick(object sender, EventArgs e)
+        private void timer1_Tick(object sender, EventArgs e)
         {
             avtTimer.Start();
 
@@ -198,14 +188,15 @@ namespace BattleShips
                     }
 
                     Network.Instance.SendMove(3, Game.me.roomID, Game.me.cName, x, y);
+
                     meProgress.Value = 0;
                 }
             }
             else
             {
-                if (enemyprogress.Value < 60)
+                if (playerProgress.Value < 60)
                 {
-                    enemyprogress.Value++;
+                    playerProgress.Value++;
                 }
             }
         }
@@ -223,15 +214,16 @@ namespace BattleShips
 
             if (Game.me.isMyTurn)
             {
-                pBoxEnemy.BackColor = Color.Black;
-                pBoxMe.BackColor = GraphicContext.colors[avtColorCounter];
+                playerPBox1.BackColor = Color.Black;
+                mePBox1.BackColor = GraphicContext.colors[avtColorCounter];
             }
             else
             {
-                pBoxMe.BackColor = Color.Black;
-                pBoxEnemy.BackColor = GraphicContext.colors[avtColorCounter];
+                mePBox1.BackColor = Color.Black;
+                playerPBox1.BackColor = GraphicContext.colors[avtColorCounter];
             }
         }
+
         private delegate void SafeUpdateWinLost(string winUser, Form form);
         public void PerformWin(string winUser, Form form)
         {
@@ -245,11 +237,11 @@ namespace BattleShips
                 this.afkTimer.Stop();
                 this.avtTimer.Stop();
 
-                this.pBoxDeskEnemy.Enabled = false;
-                this.pBoxDeskMe.Enabled = false;
+                this.pictureBox1.Enabled = false;
+                this.pictureBox2.Enabled = false;
 
                 this.meProgress.Value = 0;
-                this.enemyprogress.Value = 0;
+                this.playerProgress.Value = 0;
 
                 this.winlostPBox.BringToFront();
 
@@ -265,6 +257,24 @@ namespace BattleShips
                 }
 
                 isEndGame = true;
+            }
+        }
+
+        private void backBtn_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("You will lose the game and return to the main menu. Are you sure?", "Surrender and Exit?", MessageBoxButtons.OK, MessageBoxIcon.Question) == DialogResult.OK)
+            {
+                if (!isEndGame)
+                {
+                    // send code 7
+                    Network.Instance.SendMsg(7, Game.me.roomID, Game.me.cName);
+                }
+
+                this.Hide();
+                this.Dispose();
+
+                Network.DeployShip.Dispose();;
+                //Network.mainMenu.Show();
             }
         }
     }

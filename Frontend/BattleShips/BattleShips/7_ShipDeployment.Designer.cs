@@ -110,12 +110,12 @@
             pBoxDesk.BackgroundImageLayout = ImageLayout.Stretch;
             pBoxDesk.Location = new Point(3, 3);
             pBoxDesk.Name = "pBoxDesk";
-            pBoxDesk.Size = new Size(398, 391);
+            pBoxDesk.Size = new Size(398, 398);
             pBoxDesk.TabIndex = 5;
             pBoxDesk.TabStop = false;
             pBoxDesk.Click += pBoxDesk_Click;
-            pBoxDesk.MouseMove += pBoxDesk_MouseMove;
             pBoxDesk.Paint += ShipDeployment_Paint;
+            pBoxDesk.MouseMove += pBoxDesk_MouseMove;
             // 
             // btnBackMenu
             // 
