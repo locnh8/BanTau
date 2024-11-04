@@ -38,7 +38,7 @@ namespace BattleShips
 
             if (Network.Instance.tcpClient != null && Network.Instance.tcpClient.Connected)
             {
-                Network.Instance.SendMsg(1, Game.me.cName);
+                Network.Instance.SendMsg(1, Game.me.cName, "0");
             }
             else
             {
@@ -48,8 +48,15 @@ namespace BattleShips
 
         // Người dùng chọn tạo phòng public
         private void button2_Click(object sender, EventArgs e)
-        {
-            Network.Instance.SendMsg(1, Game.me.cName);
+            {
+            if (Network.Instance.tcpClient != null && Network.Instance.tcpClient.Connected)
+            {
+                Network.Instance.SendMsg(1, Game.me.cName, "1");
+            }
+            else
+            {
+                MessageBox.Show("Connection to the server has been lost.");
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)

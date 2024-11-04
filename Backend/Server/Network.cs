@@ -1,4 +1,5 @@
 ﻿using Microsoft.VisualBasic.ApplicationServices;
+using System;
 using System.Net;
 using System.Net.Sockets;
 using System.Runtime.Serialization.Formatters.Binary;
@@ -71,20 +72,29 @@ namespace Server
                         else if (code == 1)
                         {
                             string playerName = msgPayload[1];
-                            string roomID = msgPayload[2];
+                            string Ispublic = msgPayload[2];
+                            string roomID = msgPayload[3];
 
-                            // Player left room
-                            if (Game.rooms.ContainsKey(roomID) && Game.rooms[roomID].Players.ContainsKey(playerName))
+                        // Player left room
+                        if (Game.rooms.ContainsKey(roomID) && Game.rooms[roomID].Players.ContainsKey(playerName))
                             {
                                 Game.rooms[roomID].RemovePlayer(playerName);
 
                                 if (Game.rooms[roomID].Players.Count == 0)
                                 {
                                     Game.rooms.Remove(roomID);
+                                    if (Ispublic == "1")
+                                    {
+                                        BroadcastToClient(11, roomID, "1");
+                                    }
                                 }
                                 else
                                 {
                                     sendToRoom(5, roomID, playerName);
+                                    if (Ispublic == "1")
+                                    {
+                                        BroadcastToClient(11, roomID, "2");
+                                    }
                                 }
                             }
 
@@ -96,8 +106,15 @@ namespace Server
                                     roomID = Game.RandomRoomID();
                                 }
 
-                                Room room = new Room(roomID, playerName);
+                                Room room = new Room(roomID, playerName, Ispublic);
                                 Game.rooms.Add(roomID, room);
+                                if (Ispublic == "1")
+                                {
+                                    BroadcastToClient(11, roomID, "3");
+                                }
+                            {
+
+                            }
                             }
 
                             // Broadcast to all player in room
@@ -193,6 +210,7 @@ namespace Server
                                 if (!Game.rooms[roomID].isFull)
                                 {
                                     Game.rooms[roomID].AddPlayer(playerName, Game.currentUsers[playerName]);
+                                    BroadcastToClient(11, roomID, "4");
                                 }
                                 else
                                 {
@@ -206,7 +224,18 @@ namespace Server
                                         sendToRoom(1, roomID, playername);
                                     }
                                 }
+                            }
                         }
+                        else if (code == 10)
+                        {
+                            string playerName = msgPayload[1];
+                            foreach (var room in Game.rooms.Values)
+                            {
+                                if (room.isPublic == "1")
+                                {
+                                    sendMsg(10, playerName, room.RoomID, (room.Players.Count()).ToString());
+                                }
+                            }
                         }
                 }
             }
@@ -232,21 +261,21 @@ namespace Server
 
 
         // Gửi tin nhắn tới một client
-        private void sendMsg(int code, string playerID, string msg, string msg1 = "")
+        private void sendMsg(int code, string player, string msg, string msg1 = "")
         {
             try
             {
-                string formattedMsg = $"{code}|{playerID}|{msg}|{msg1}";
+                string formattedMsg = $"{code}|{player}|{msg}|{msg1}";
 
-                if (Game.currentTCPs.ContainsKey(playerID))
+                if (Game.currentTCPs.ContainsKey(player))
                 {
-                    StreamWriter sw = new StreamWriter(Game.currentTCPs[playerID].GetStream()) { AutoFlush = true };
+                    StreamWriter sw = new StreamWriter(Game.currentTCPs[player].GetStream()) { AutoFlush = true };
                     sw.WriteLine(formattedMsg);
                 }
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Error sending message to {playerID}: {ex.Message}");
+                Console.WriteLine($"Error sending message to {player}: {ex.Message}");
             }
         }
 
@@ -280,6 +309,36 @@ namespace Server
                 }
             }
         }
+
+        private void BroadcastToClient(int code, string msg = "", string msg1 = "")
+        {
+            string formattedMsg = $"{code}|{msg}|{msg1}";
+
+            foreach (var client in Game.currentTCPs)
+            {
+                try
+                {
+                    StreamWriter sw = new StreamWriter(client.Value.GetStream()) { AutoFlush = true };
+                    sw.WriteLine(formattedMsg);
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"Error sending message to {client.Key}: {ex.Message}");
+                }
+            }
+        }
+
+        private void SendPublicRoomsToClient(string player)
+        {
+            foreach (var room in Game.rooms.Values)
+            {
+                if (room.isPublic == "1")
+                {
+                    sendMsg(10, player, room.RoomID, (room.Players.Count()).ToString());
+                }
+            }
+        }
+
 
         private void getPlayer(string username, string roomID)
         {

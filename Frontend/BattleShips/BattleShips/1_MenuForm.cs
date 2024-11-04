@@ -17,9 +17,17 @@ namespace BattleShips
 
         private void button1_Click(object sender, EventArgs e)
         {
-            NamingForm nameForm = new NamingForm();
-            nameForm.Show();
-            this.Hide();
+            if (Network.namingForm == null)
+            {
+                NamingForm nameForm = new NamingForm();
+                nameForm.Show();
+                this.Hide();
+            }
+            else
+            {
+                Network.create.Show();
+                this.Hide();
+            }
         }
 
         private void BtnLuat_Click(object sender, EventArgs e)

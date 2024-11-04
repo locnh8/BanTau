@@ -229,6 +229,26 @@ namespace Battleships
                     string Message = msgPayload[2];
                     playform.UpdateChat(RoomID, Message);
                 }
+                else if(code == 10)
+                {
+                    string player = msgPayload[1];
+                    string RoomID = msgPayload[2];
+                    string count = msgPayload[3];
+                    if (RoomID == "" && count == "")
+                    {
+                        MessageBox.Show("Loi khi load gridview");
+                    }
+                    else
+                    {
+                        create.UpdateGridView(RoomID, count);
+                    }
+                }
+                else if (code == 11)
+                {
+                    string RoomID = msgPayload[1];
+                    string flag = msgPayload[2];
+                    create.UpdateGridView1(RoomID, flag);
+                }
             }
             catch (Exception ex)
             {

@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{0C3154F9-7766-494A-B621-D0D7FB7F0B6E}|Server\\Server.csproj|solutionrelative:server\\network.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0C3154F9-7766-494A-B621-D0D7FB7F0B6E}|Server\\Server.csproj|D:\\NT106-final\\BanTau\\Backend\\server\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0C3154F9-7766-494A-B621-D0D7FB7F0B6E}|Server\\Server.csproj|solutionrelative:server\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0C3154F9-7766-494A-B621-D0D7FB7F0B6E}|Server\\Server.csproj|D:\\NT106-final\\BanTau\\Backend\\server\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0C3154F9-7766-494A-B621-D0D7FB7F0B6E}|Server\\Server.csproj|solutionrelative:server\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C3154F9-7766-494A-B621-D0D7FB7F0B6E}|Server\\Server.csproj|D:\\NT106-final\\BanTau\\Backend\\server\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C3154F9-7766-494A-B621-D0D7FB7F0B6E}|Server\\Server.csproj|solutionrelative:server\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0C3154F9-7766-494A-B621-D0D7FB7F0B6E}|Server\\Server.csproj|D:\\NT106-final\\BanTau\\Backend\\server\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -44,7 +44,7 @@
               "RelativeDocumentMoniker": "Server\\Network.cs",
               "ToolTip": "D:\\NT106-final\\BanTau\\Backend\\Server\\Network.cs",
               "RelativeToolTip": "Server\\Network.cs",
-              "ViewState": "AQIAALEAAAAAAAAAAAAAALwAAAA+AAAA",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAhwFsAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-07T15:05:40.395Z",
               "IsPinned": true,
@@ -83,32 +83,33 @@
               "RelativeDocumentMoniker": "Server\\Player.cs",
               "ToolTip": "D:\\NT106-final\\BanTau\\Backend\\Server\\Player.cs",
               "RelativeToolTip": "Server\\Player.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAA/AAAA",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAwCAAAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T04:48:14.56Z"
+              "WhenOpened": "2024-10-15T04:48:14.56Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Room.cs",
               "DocumentMoniker": "D:\\NT106-final\\BanTau\\Backend\\Server\\Room.cs",
               "RelativeDocumentMoniker": "Server\\Room.cs",
               "ToolTip": "D:\\NT106-final\\BanTau\\Backend\\Server\\Room.cs",
               "RelativeToolTip": "Server\\Room.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAzwCUAAAANAAAA",
+              "ViewState": "AQIAABYAAAAAAAAAAAAwwAoAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-07T15:54:21.863Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Game.cs",
               "DocumentMoniker": "D:\\NT106-final\\BanTau\\Backend\\Server\\Game.cs",
               "RelativeDocumentMoniker": "Server\\Game.cs",
               "ToolTip": "D:\\NT106-final\\BanTau\\Backend\\Server\\Game.cs",
               "RelativeToolTip": "Server\\Game.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA0AAABhAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-07T15:54:45.304Z",
               "EditorCaption": ""

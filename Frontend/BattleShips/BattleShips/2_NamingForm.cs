@@ -49,9 +49,11 @@ namespace BattleShips
                     Game.me = new Player(name);
 
                     // Chuyển sang form CreateRoom
-                    CreateRoom formTaoPhong = new CreateRoom();
-                    formTaoPhong.Show(); // Hiển thị form tạo phòng
+                    CreateRoom createRoom = new CreateRoom();
+                    createRoom.Show();
                     this.Hide();
+                    Network.Instance.SendMsg(10, Game.me.cName);
+
                 }
                 else
                 {

@@ -266,15 +266,13 @@ namespace BattleShips
             {
                 if (!isEndGame)
                 {
-                    // send code 7
-                    Network.Instance.SendMsg(7, Game.me.roomID, Game.me.cName);
+                    Network.Instance.SendMsg(5, Game.me.roomID, Game.me.cName);
                 }
 
                 this.Hide();
                 this.Dispose();
 
-                Network.DeployShip.Dispose(); ;
-                //Network.mainMenu.Show();
+                Network.DeployShip.Dispose();
             }
         }
 

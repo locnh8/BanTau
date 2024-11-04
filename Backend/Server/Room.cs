@@ -9,16 +9,19 @@
         public string CurrentTurn { get; private set; } // Người chơi hiện tại
 
         public bool isFull { get; set; }
+        
+        public string isPublic { get; set; }
 
         public List<bool> isPlaying { get; set; }
 
-        public Room(string id, string userName)
+        public Room(string id, string userName, string isPublic)
         {
             this.RoomID = id;
             this.Players = new Dictionary<string, Player>();
             Players.Add(userName, new Player(userName)); // Thêm người chơi vào phòng
             isPlaying = new List<bool> { false, false }; // Trạng thái chơi ban đầu
             CurrentTurn = userName; // Người chơi đầu tiên là người tạo phòng
+            this.isPublic = isPublic;
         }
 
         public void AddPlayer(string playerName, Player player)

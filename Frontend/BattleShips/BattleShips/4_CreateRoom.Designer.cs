@@ -120,11 +120,12 @@
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { RoomID, PlayerCount, Join });
-            dataGridView1.Location = new Point(187, 226);
+            dataGridView1.Location = new Point(216, 220);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(427, 188);
+            dataGridView1.Size = new Size(426, 188);
             dataGridView1.TabIndex = 5;
+            dataGridView1.CellClick += dataGridView1_CellClick;
             // 
             // RoomID
             // 
@@ -150,6 +151,7 @@
             Join.Name = "Join";
             Join.Resizable = DataGridViewTriState.True;
             Join.SortMode = DataGridViewColumnSortMode.Automatic;
+            Join.Text = "Join";
             Join.Width = 125;
             // 
             // CreateRoom
@@ -170,6 +172,11 @@
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
+        }
+
+        private void DataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         #endregion
