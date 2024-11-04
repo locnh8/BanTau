@@ -266,29 +266,30 @@ namespace BattleShips
             {
                 if (!isEndGame)
                 {
-                    Network.Instance.SendMsg(5, Game.me.roomID, Game.me.cName);
+                    // send code 7
+                    Network.Instance.SendMsg(7, Game.me.roomID, Game.me.cName);
                 }
 
                 this.Hide();
                 this.Dispose();
 
-                Network.DeployShip.Dispose();
+                Network.DeployShip.Dispose(); ;
+                //Network.mainMenu.Show();
             }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Network.Instance.SendMsg(8, Game.me.roomID, Game.me.cName, textBox1.Text);
-            textBox1.Clear();
+            Network.Instance.SendMsg(8, Game.me.roomID, Game.me.cName, textBox1.Text) ;
         }
 
-        private delegate void SafeUpdateChat(string roomID, string msg);
-        public void UpdateChat(string roomID, string msg)
+        private delegate void SafeUpdateChat(string msg);
+        public void UpdateChat(string msg)
         {
             if (richTextBox1.InvokeRequired)
             {
                 var d = new SafeUpdateChat(UpdateChat);
-                richTextBox1.Invoke(d, new object[] {roomID, msg });
+                richTextBox1.Invoke(d, new object[] { msg });
             }
             else
             {

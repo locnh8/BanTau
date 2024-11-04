@@ -25,15 +25,27 @@ namespace BattleShips
             LbEnemy.Text = "Đang chờ..."; // Để trống hoặc hiển thị thông báo chờ
 
             // Cập nhật label Room ID
-            label1.Text ="RoomID: " + roomId;
+            label1.Text = roomId;
 
         }
-        //Tin hieu roi phong
+
+        public void SafeInvoke(Action action)
+        {
+            if (this.InvokeRequired)
+            {
+                this.Invoke(action);
+            }
+            else
+            {
+                action();
+            }
+        }
+
         private void btnBack_Click(object sender, EventArgs e)
         {
-            Network.create.Show();
+            Private_Public formCreateRoom = new Private_Public();
+            formCreateRoom.Show();
             this.Close();
-            Network.Instance.SendMsg(1, Game.me.cName,"", roomId);
         }
 
         private void btnReady_Click(object sender, EventArgs e)
@@ -62,8 +74,29 @@ namespace BattleShips
                 if (code == 1)
                 {
                         LbEnemy.Text = Game.player.cName;
-                }             
-            }         
+                }
+                //if (code == 5)
+                //{
+                //    LbMe.Text = LbMe.Text.Replace(otherPlayer, "");
+                //    return;
+                //}
+
+                //if (LbMe.Text.Contains(Game.me.cName))
+                //{
+                //    LbMe.Text = $"{roomID} - {otherPlayer}";
+                //}
+                //else if (LbMe.Text.Contains(" - ") && otherPlayer != Game.me.cName)
+                //{
+                //    LbMe.Text += $"{otherPlayer}";
+                //}
+
+                //Network.DeployShip = new ShipDeployment();
+                //Network.DeployShip.Show();
+                //Hide();
+            }
+            //Game.player = new Player(name, id);
+            //LbMe.Text = Game.me.cName;
+            //LbEnemy.Text = Game.player.cName;
         }
         
         

@@ -33,11 +33,6 @@
             label1 = new Label();
             textBox1 = new TextBox();
             btnBack = new Button();
-            dataGridView1 = new DataGridView();
-            RoomID = new DataGridViewTextBoxColumn();
-            PlayerCount = new DataGridViewTextBoxColumn();
-            Join = new DataGridViewButtonColumn();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // button1
@@ -116,44 +111,6 @@
             btnBack.UseVisualStyleBackColor = false;
             btnBack.Click += btnBack_Click;
             // 
-            // dataGridView1
-            // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { RoomID, PlayerCount, Join });
-            dataGridView1.Location = new Point(216, 220);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(426, 188);
-            dataGridView1.TabIndex = 5;
-            dataGridView1.CellClick += dataGridView1_CellClick;
-            // 
-            // RoomID
-            // 
-            RoomID.HeaderText = "RoomID";
-            RoomID.MinimumWidth = 6;
-            RoomID.Name = "RoomID";
-            RoomID.ReadOnly = true;
-            RoomID.Resizable = DataGridViewTriState.True;
-            RoomID.Width = 125;
-            // 
-            // PlayerCount
-            // 
-            PlayerCount.HeaderText = "PlayerCount";
-            PlayerCount.MinimumWidth = 6;
-            PlayerCount.Name = "PlayerCount";
-            PlayerCount.ReadOnly = true;
-            PlayerCount.Width = 125;
-            // 
-            // Join
-            // 
-            Join.HeaderText = "Join";
-            Join.MinimumWidth = 6;
-            Join.Name = "Join";
-            Join.Resizable = DataGridViewTriState.True;
-            Join.SortMode = DataGridViewColumnSortMode.Automatic;
-            Join.Text = "Join";
-            Join.Width = 125;
-            // 
             // CreateRoom
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -161,7 +118,6 @@
             BackgroundImage = Properties.Resources.bantau;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(800, 450);
-            Controls.Add(dataGridView1);
             Controls.Add(btnBack);
             Controls.Add(textBox1);
             Controls.Add(label1);
@@ -169,14 +125,8 @@
             Controls.Add(button1);
             Name = "CreateRoom";
             Text = "Create Room";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
-        }
-
-        private void DataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            throw new NotImplementedException();
         }
 
         #endregion
@@ -186,9 +136,5 @@
         private Label label1;
         private TextBox textBox1;
         private Button btnBack;
-        private DataGridView dataGridView1;
-        private DataGridViewTextBoxColumn RoomID;
-        private DataGridViewTextBoxColumn PlayerCount;
-        private DataGridViewButtonColumn Join;
     }
 }

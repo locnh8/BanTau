@@ -1,5 +1,4 @@
 ﻿using Microsoft.VisualBasic.ApplicationServices;
-using System;
 using System.Net;
 using System.Net.Sockets;
 using System.Runtime.Serialization.Formatters.Binary;
@@ -71,30 +70,21 @@ namespace Server
                         // Tạo phòng
                         else if (code == 1)
                         {
-                            string playerName = msgPayload[1];
-                            string Ispublic = msgPayload[2];
-                            string roomID = msgPayload[3];
+                            string playerName= msgPayload[1];
+                            string roomID = msgPayload[2];
 
-                        // Player left room
-                        if (Game.rooms.ContainsKey(roomID) && Game.rooms[roomID].Players.ContainsKey(playerName))
+                            // Player left room
+                            if (Game.rooms.ContainsKey(roomID) && Game.rooms[roomID].Players.ContainsKey(playerName))
                             {
                                 Game.rooms[roomID].RemovePlayer(playerName);
 
                                 if (Game.rooms[roomID].Players.Count == 0)
                                 {
                                     Game.rooms.Remove(roomID);
-                                    if (Ispublic == "1")
-                                    {
-                                        BroadcastToClient(11, roomID, "1");
-                                    }
                                 }
                                 else
                                 {
                                     sendToRoom(5, roomID, playerName);
-                                    if (Ispublic == "1")
-                                    {
-                                        BroadcastToClient(11, roomID, "2");
-                                    }
                                 }
                             }
 
@@ -106,15 +96,25 @@ namespace Server
                                     roomID = Game.RandomRoomID();
                                 }
 
-                                Room room = new Room(roomID, playerName, Ispublic);
+                                Room room = new Room(roomID, playerName);
                                 Game.rooms.Add(roomID, room);
-                                if (Ispublic == "1")
-                                {
-                                    BroadcastToClient(11, roomID, "3");
-                                }
-                            {
-
                             }
+
+                            // Player join room
+                            else
+                            {
+                                // Join room OK
+                                if (!Game.rooms[roomID].isFull)
+                                {
+                                    Game.rooms[roomID].AddPlayer(playerName, Game.currentUsers[playerName]);
+
+                                }
+                                // Room is full
+                                else
+                                {
+                                    sendMsg(1, playerName, "");
+                                    continue;
+                                }
                             }
 
                             // Broadcast to all player in room
@@ -125,7 +125,6 @@ namespace Server
                                     sendToRoom(1, roomID, playername);
                                 }
                             }
-                        
                         }
                         // Lấy thông tin bản đồ người chơi
                         else if (code == 2)
@@ -200,44 +199,8 @@ namespace Server
                             string player = msgPayload[2];
                             string message = player + ": " + msgPayload[3]; 
                             sendToRoom(8, roomID, message);
-                        }
-                        else if (code == 9)
-                        {
-                            string playerName = msgPayload[1];
-                            string roomID = msgPayload[2];
-                            if (!string.IsNullOrEmpty(roomID) && Game.rooms.ContainsKey(roomID))
-                            {
-                                if (!Game.rooms[roomID].isFull)
-                                {
-                                    Game.rooms[roomID].AddPlayer(playerName, Game.currentUsers[playerName]);
-                                    BroadcastToClient(11, roomID, "4");
-                                }
-                                else
-                                {
-                                    sendMsg(1, playerName, "");
-                                }
-                                //Broadcast to all player in room
-                                if (Game.rooms.ContainsKey(roomID))
-                                {
-                                    foreach (string playername in Game.rooms[roomID].Players.Keys)
-                                    {
-                                        sendToRoom(1, roomID, playername);
-                                    }
-                                }
-                            }
-                        }
-                        else if (code == 10)
-                        {
-                            string playerName = msgPayload[1];
-                            foreach (var room in Game.rooms.Values)
-                            {
-                                if (room.isPublic == "1")
-                                {
-                                    sendMsg(10, playerName, room.RoomID, (room.Players.Count()).ToString());
-                                }
-                            }
-                        }
-                }
+                    }
+                    }
             }
             catch
             {
@@ -250,32 +213,26 @@ namespace Server
                 // Đảm bảo tài nguyên của client được giải phóng khi kết thúc kết nối
                 client.Close();
                 sr.Close();
-                if (Game.currentTCPs.ContainsValue(client))
-                {
-                    string username = Game.currentTCPs.FirstOrDefault(x => x.Value == client).Key;
-                    Game.currentTCPs.Remove(username);
-                    Game.currentUsers.Remove(username);
-                }
             }
         }
 
 
         // Gửi tin nhắn tới một client
-        private void sendMsg(int code, string player, string msg, string msg1 = "")
+        private void sendMsg(int code, string playerID, string msg, string msg1 = "")
         {
             try
             {
-                string formattedMsg = $"{code}|{player}|{msg}|{msg1}";
+                string formattedMsg = $"{code}|{playerID}|{msg}|{msg1}";
 
-                if (Game.currentTCPs.ContainsKey(player))
+                if (Game.currentTCPs.ContainsKey(playerID))
                 {
-                    StreamWriter sw = new StreamWriter(Game.currentTCPs[player].GetStream()) { AutoFlush = true };
+                    StreamWriter sw = new StreamWriter(Game.currentTCPs[playerID].GetStream()) { AutoFlush = true };
                     sw.WriteLine(formattedMsg);
                 }
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Error sending message to {player}: {ex.Message}");
+                Console.WriteLine($"Error sending message to {playerID}: {ex.Message}");
             }
         }
 
@@ -309,36 +266,6 @@ namespace Server
                 }
             }
         }
-
-        private void BroadcastToClient(int code, string msg = "", string msg1 = "")
-        {
-            string formattedMsg = $"{code}|{msg}|{msg1}";
-
-            foreach (var client in Game.currentTCPs)
-            {
-                try
-                {
-                    StreamWriter sw = new StreamWriter(client.Value.GetStream()) { AutoFlush = true };
-                    sw.WriteLine(formattedMsg);
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine($"Error sending message to {client.Key}: {ex.Message}");
-                }
-            }
-        }
-
-        private void SendPublicRoomsToClient(string player)
-        {
-            foreach (var room in Game.rooms.Values)
-            {
-                if (room.isPublic == "1")
-                {
-                    sendMsg(10, player, room.RoomID, (room.Players.Count()).ToString());
-                }
-            }
-        }
-
 
         private void getPlayer(string username, string roomID)
         {
